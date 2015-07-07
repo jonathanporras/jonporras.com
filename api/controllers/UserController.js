@@ -5,6 +5,8 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
+var passport = require('passport');
+
 module.exports = {
 	findUserByEmail: function(req, res) {
 		var email = req.param('id');
@@ -21,12 +23,33 @@ module.exports = {
 		});
 	},
 
-	handleUserSignUp: function(req, res) {
-		User.create({
-			name: req.body.name,
-			email: req.body.email,
-			password: req.body.password,
-			stripeid: req.body.stripeid
+	handleSubscription: function(req, res) {
+		var stripe = require("stripe")("sk_test_xXhgZSfOqRNrHI6HOvNOsk6k");
+		var stripeToken = req.body.stripeToken;
+
+		stripe.customers.create({
+			source: stripeToken,
+			plan: "test01",
+			email: req.body.email
+
+		}, function(err, customer) {
+			if(err) {
+				res.json({error:err});
+			} else {
+				User.create({
+					email: req.body.email,
+					password: req.body.password,
+					stripeid: customer.id
+				}, function() {
+					passport.authenticate('local')(req, res, function() {
+				       
+						res.redirect('/');
+				    });
+					
+				});
+			}	
 		});
+
+		
 	}
 };

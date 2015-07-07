@@ -31,10 +31,20 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
+  
   '/': {
     view: 'homepage'
   },
+
+  /***************************************************************************
+  *                                                                          *
+  * Custom routes here...                                                    *
+  *                                                                          *
+  * If a request to a URL doesn't match any of the custom routes above, it   *
+  * is matched against Sails route blueprints. See `config/blueprints.js`    *
+  * for configuration options and examples.                                  *
+  *                                                                          *
+  ***************************************************************************/
 
   'get /login': {
        view: 'login'
@@ -46,16 +56,8 @@ module.exports.routes = {
 
   'get /signup': {
     view: 'signup'
-  }
+  },
 
-  /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  * If a request to a URL doesn't match any of the custom routes above, it   *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
+  'post /subscribe': 'UserController.handleSubscription'
 
 };
