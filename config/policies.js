@@ -18,10 +18,14 @@
 
 
 module.exports.policies = {
+    '*': true,
 
+    'PostController': {
+        '*': 'isAuthenticated'
+    }
   /***************************************************************************
   *                                                                          *
-  * Default policy for all controllers and actions (`true` allows public     *
+  * Defalt policy for all controllers and actions (`true` allows public     *
   * access)                                                                  *
   *                                                                          *
   ***************************************************************************/

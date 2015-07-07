@@ -19,6 +19,14 @@ module.exports = {
 				res.json({notFound: false, userData:user});
 			}
 		});
+	},
+
+	handleUserSignUp: function(req, res) {
+		User.create({
+			name: req.body.name,
+			email: req.body.email,
+			password: req.body.password,
+			stripeid: req.body.stripeid
+		});
 	}
 };
-
