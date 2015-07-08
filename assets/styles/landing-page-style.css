@@ -1,0 +1,31 @@
+div.landing-wrapper {
+	padding-top: 190px;
+}
+
+div.landing-wrapper h1.page-title {
+	font-size: 63px;
+  	text-transform: uppercase;
+  	text-align: center;
+  	background: url('../images/jp-palms.jpg') top;
+  	-webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+div.landing-wrapper ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+div.landing-wrapper ul li {
+  	font-size: 19px;
+  	color: black;
+  	display: inline;
+  	padding: 0 30px;
+  	background: url('../images/jp-palms.jpg') top;
+  	-webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+div.landing-wrapper ul a:hover {
+	text-decoration: none;
+}
