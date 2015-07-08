@@ -26,10 +26,10 @@ module.exports = {
 	handleSubscription: function(req, res) {
 		var stripe = require("stripe")("sk_test_xXhgZSfOqRNrHI6HOvNOsk6k");
 		var stripeToken = req.body.stripeToken;
-
+		
 		stripe.customers.create({
 			source: stripeToken,
-			plan: "test01",
+			plan: "test02",
 			email: req.body.email
 
 		}, function(err, customer) {
@@ -37,9 +37,17 @@ module.exports = {
 				res.json({error:err});
 			} else {
 				User.create({
+					name: req.body.name,
+					address1: req.body.address_line1,
+					address2: req.body.address_line2,
+					city: req.body.address_city,
+					state: req.body.address_state,
+					zip: req.body.address_zip,
+					country: req.body.address_country,
 					email: req.body.email,
 					password: req.body.password,
-					stripeid: customer.id
+					stripecustomerid: customer.id,
+					stripepaymenttoken: stripeToken
 				}, function() {
 					passport.authenticate('local')(req, res, function() {
 				       

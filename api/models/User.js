@@ -10,7 +10,29 @@ var bcrypt = require('bcrypt');
 module.exports = {
 
 	attributes: {
-
+		name: {
+			type: "string",
+			required: true,
+			minLength: 1
+		},
+		address1: {
+			type: "string"
+		},
+		address2: {
+			type: "string"
+		},
+		city: {
+			type: "string"
+		},
+		state: {
+			type: "string"
+		},
+		zip: {
+			type: "string"
+		},
+		country: {
+			type: "string"
+		},
 		email: {
 			type: "email",
 			required: true,
@@ -21,9 +43,11 @@ module.exports = {
 			required: true,
 			minLength: 6
 		},
-		stripeid: {
+		stripecustomerid: {
 			type: "string",
-			minLength: 18
+		},
+		stripepaymenttoken: {
+			type: "string",
 		}
 	},
 	beforeCreate: function(user, cb) {
