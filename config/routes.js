@@ -58,6 +58,7 @@ module.exports.routes = {
     view: 'signup'
   },
 
-  'post /subscribe': 'UserController.handleSubscription'
 
+  'post /subscribe': 'UserController.handleSubscription',
+  'get /music': 'MusicController.albumList'
 };

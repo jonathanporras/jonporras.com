@@ -1,5 +1,6 @@
 div.landing-wrapper {
 	padding-top: 145px;
+	position: relative;
 }
 
 div.landing-wrapper div.title-wrapper {
@@ -8,14 +9,17 @@ div.landing-wrapper div.title-wrapper {
 
 div.landing-wrapper ul {
 	list-style-type: none;
-	text-align: center;
+  	text-align: left;
+  	position: absolute;
+  	left: 51%;
+  	top: 308px;
+  	transform: translate(-25%, 0);
+  	min-width: 220px;
 }
 
 div.landing-wrapper ul li {
   	font-size: 19px;
   	color: black;
-  	display: inline;
-  	padding: 0 30px;
   	background: url('../images/jp-palms.jpg') top;
   	-webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -29,6 +33,7 @@ text {
 	fill: url(#pattern);
 	font-size: 63px;
   	text-transform: uppercase;
+  	letter-spacing: 1px;
   	/* text-align: center; */
   	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }

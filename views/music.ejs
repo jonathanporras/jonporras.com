@@ -1,0 +1,11 @@
+
+<div class="container">
+	<div class="row">
+		<% for(var i = 0;i < data.length; i++){ %>
+			<div class="album-wrapper col-xs-12 col-sm-4">
+				<p><%= data[i].artist %></p>
+				<p><%= data[i].albumTitle %></p>
+			</div>
+		<% } %>
+	</div>
+</div>
