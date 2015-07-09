@@ -1,3 +1,25 @@
+div.album-wrapper {
+	padding-top: 15px;
+}
+
 div.album-wrapper img {
 	width: 100%;
+}
+
+div.album-wrapper img.inner-album-cover {
+	max-width: 360px;
+}
+
+div.album-wrapper div.album-data {
+	display: none;
+  	position: fixed;
+  	z-index: 10;
+  	top: 5%;
+  	width: 65%;
+  	height: 100%;
+  	background-color: rgba(255, 255, 255, .9);
+  	left: 50%;
+  	margin: 0 0 0 -33.5%;
+  	text-align: center;
+  	padding: 35px;
 }
