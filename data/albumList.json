@@ -1,14 +1,174 @@
 [
-	{
-		"artist": "Jon Porras",
-		"albumTitle": "Light Divide"
+	{ "solo": 
+		[{
+			"artist": "Jon Porras",
+			"albumTitle": "Light Divide",
+			"year": "2014",
+			"label": "Thrill Jockey",
+			"trackList": ["Apeiron", "Recollection", "Divide", "New Monument", "Pleiades"],
+			"albumCover": "images/album-covers/light-divide.jpg"
+		},
+		{
+			"artist": "Dvvllxns",
+			"albumTitle": "Lxtvny",
+			"year": "2012",
+			"label": "Shelter Press",
+			"trackList": ["Litany", "Xochitl", "Entropy", "Espejo"],
+			"albumCover": "images/album-covers/lxtvny.jpg"
+		},
+		{
+			"artist": "Jon Porras",
+			"albumTitle": "Orilla Oscura",
+			"year": "2012",
+			"label": "Immune Recordings",
+			"trackList": ["Light of Dawn", "Your Sleeping Ghost", "Vision in the Water", "House of Mirrors", "Holy Hex", "As You Fade Away", "Awake in Moonlight", "Light of Dusk"],
+			"albumCover": "images/album-covers/orilla-oscura.jpg"
+		},
+		{
+			"artist": "Jon Porras",
+			"albumTitle": "Black Mesa",
+			"year": "2012",
+			"label": "Thrill Jockey",
+			"trackList": ["Into Midnight", "Blue Crescent Vision", "Candlelight Mirage", "Desert Flight", "Embers At Dusk", "Into the Black Mesa", "Beyond the Veil"],
+			"albumCover": "images/album-covers/black-mesa.jpg"
+		},
+		{
+			"artist": "Jon Porras",
+			"albumTitle": "Undercurrent",
+			"year": "2011",
+			"label": "Root Strata",
+			"trackList": ["Grey Dunes", "Seascape", "Shore", "For ARH", "Calm", "Peering", "Land's End", "Gaze"],
+			"albumCover": "images/album-covers/undercurrent.jpg"
+		},
+		{
+			"artist": "Elm",
+			"albumTitle": "Nemcatacoa",
+			"year": "2009",
+			"label": "Digitalis / Sweat Lodge Guru",
+			"trackList": ["Nemcatacoa", "In the Shadow of Red Rock", "Silver Dust In Moonlight", "Arc of Wisdom", "Sacrament at Dusk", "Breath of Midnight Still", "Covered in Blankets and Moss", "Three Rings Drawn in Sand", "Deep Mirage"],
+			"albumCover": "images/album-covers/nemcatacoa.jpg"
+		},
+		{
+			"artist": "Elm",
+			"albumTitle": "Woven Into Light",
+			"year": "2008",
+			"label": "Blackest Rainbow",
+			"trackList": ["Rising Smoke Woods", "Fog Water Shroud", "On Golden Wing", "Solemn Night Prayer", "Long Winter's Howl", "Mist Left to Hide the Ashes", "Waves Break Into Beams of Light"],
+			"albumCover": "images/album-covers/woven-into-light.jpg"
+		},
+		{
+			"artist": "Elm",
+			"albumTitle": "Bxogonoas",
+			"year": "2008",
+			"label": "Digitalis",
+			"trackList": ["Dawn Unveils the Golden Thread", "Offerings", "Arboreal Lace", "Blackened Horizon", "Trails Lined with Torquoise & Silk", "Guaquy", "Warm and Still the Ground Keeps Our Frozen Hands", "The Desert Speaks At Sundown", "Lift Our Eyes to the Swelling Tides"],
+			"albumCover": "images/album-covers/bxogonoas2.jpg"
+		}]
 	},
-	{
-		"artist": "Jon Porras",
-		"albumTitle": "Black Mesa"
-	},
-	{
-		"artist": "Jon Porras",
-		"albumTitle": "Undercurrent"
-	}
+	{"collab": 
+		[{
+			"artist": "Barn Owl",
+			"albumTitle": "V",
+			"year": "2013",
+			"label": "Thril Jockey",
+			"trackList": ["Void Redux", "The Long Shadow", "Against The Night", "Blood Echo", "Pacific Isolation", "The Opulent Decline"],
+			"albumCover": "images/album-covers/v.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "The Factory Session / Live At Berkeley Art Museum",
+			"year": "2013",
+			"label": "Thrill Jockey",
+			"trackList": ["I", "II", "III", "Live at Berkeley Art Museum"],
+			"albumCover": "images/album-covers/factory-session.jpg"
+		},
+		{
+			"artist": "Portraits",
+			"albumTitle": "Self-Titled",
+			"year": "2012",
+			"label": "Important Records",
+			"trackList": ["D", "Sa", "Gong"],
+			"albumCover": "images/album-covers/portraits.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "Lost In The Glare",
+			"year": "2011",
+			"label": "Thrill Jockey",
+			"trackList": ["Pale Star", "Turiya", "Devotion I", "The Darkest Night Since 1683", "Temple Of The Winds", "Midnight Tide", "Light Echoes", "Devotion II"],
+			"albumCover": "images/album-covers/lost-in-the-glare.jpg"
+		},
+		{
+			"artist": "Barn Owl & The Infinite Strings Ensemble (Collab with Ellen Fullman)",
+			"albumTitle": "The Headlands",
+			"year": "2010",
+			"label": "Important Records",
+			"trackList": ["Levitation", "Light", "Foghorns", "Condensation"],
+			"albumCover": "images/album-covers/headlands.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "Ancestral Star",
+			"year": "2010",
+			"label": "Thrill Jockey",
+			"trackList": ["Sundown", "Visions In Dust", "Night's Shroud", "Ancestral Star", "Cavern Hymn", "Flatlands", "Twilight", "Awakening", "Incantation", "Light From The Mesa"],
+			"albumCover": "images/album-covers/ancestral-star.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "Transfiguration",
+			"year": "2009",
+			"label": "Self-Released",
+			"trackList": ["Transfiguration"],
+			"albumCover": "images/album-covers/transfiguration.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "The Conjurer",
+			"year": "2009",
+			"label": "Root Strata",
+			"trackList": ["Into The Red Horizon", "Across The Deserts Of Ash", "Procession Of Golden Bones", "Ancient Of Days"],
+			"albumCover": "images/album-covers/conjurer.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "Smoke Loom Ceremony",
+			"year": "2008",
+			"label": "Blackest Rainbow",
+			"trackList": ["I", "II"],
+			"albumCover": "images/album-covers/smoke-loom-ceremony.jpg"
+		},
+		{
+			"artist": "Barn Owl / Tom Carter",
+			"albumTitle": "Split LP",
+			"year": "2008",
+			"label": "Blackest Rainbow",
+			"trackList": ["Flight Of Anhing", "Burning Dunes In Moonlight", "Uluru"],
+			"albumCover": "images/album-covers/tom-carter-split.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "From Our Mouths A Perpetual Light",
+			"year": "2008",
+			"label": "Not Not Fun",
+			"trackList": ["Voice Of The Other", "Lotus Cloud", "The Stones Speak Through The Fire", "The White Mountain Filled With Light", "Road To Bardo", "The Last Parade", "Mouths Of Light", "Teonanacatl"],
+			"albumCover": "images/album-covers/fomapl.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "Bridge To The Clouds",
+			"year": "2007",
+			"label": "Not Not Fun",
+			"trackList": ["Diamond Cloud", "Dirtroadblues", "Absent Afternoon", "She Swims In The Clouds", "The Sun Falls", "Golden Forest", "At Peace With The Fever", "The Path Through The Desert"],
+			"albumCover": "images/album-covers/bridge-to-the-clouds.jpg"
+		},
+		{
+			"artist": "Barn Owl",
+			"albumTitle": "Self-Titled",
+			"year": "2007",
+			"label": "Foxglove / Self-released",
+			"trackList": ["The Buffalo Queen", "Driftwood", "Walnut Tree", "Red River Raag", "Dug Up From Deep Down", "Snow Swamp", "The Twirling Tusks Of The Mouth Of God", "Reappear", "Toloah", "Morning Cigarette"],
+			"albumCover": "images/album-covers/self-titled.jpg"
+		}]
+	}	
 ]
