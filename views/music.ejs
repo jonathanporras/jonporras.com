@@ -1,5 +1,8 @@
 <div class="nav">
 	<span class="nav-arrow"></span>
+	<div class="spotify-follow-wrapper">
+		<iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0FDxPN4OkExGczv8cRTAZx&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+	</div>
 </div>
 <div class="container page-body">
 	<h2 class="solo-header">Solo</h2>
@@ -14,13 +17,19 @@
 				<div class="album-wrapper col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
 					<img class="album-cover" src="<%= albumData[0].solo[i].albumCover %>">
 					<div id="albumData" class="album-data">
+						<span class="close-button">X</span>
 						<img id="innerAlbumCover" class="inner-album-cover" src="<%= albumData[0].solo[i].albumCover %>">
-						<p><%= albumData[0].solo[i].artist %></p>
-						<p><%= albumData[0].solo[i].albumTitle %></p>
-						<p><%= albumData[0].solo[i].year %></p>
-						<p><%= albumData[0].solo[i].label %></p>
+							<h2><%= albumData[0].solo[i].artist %></h2>
+							<h3><%= albumData[0].solo[i].albumTitle %></h3>
+						<div class="album-details">
+							<p><%= albumData[0].solo[i].year %></p>
+							<p><%= albumData[0].solo[i].label %></p>
+						</div>
 						<% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
 							<p><%= albumData[0].solo[i].trackList[j] %></p>
+						<% } %>
+						<% if(albumData[0].solo[i].spotifyURI !== "") { %>
+							<iframe class="spotify-frame" src="https://embed.spotify.com/?uri=spotify:album:<%= albumData[0].solo[i].spotifyURI %>" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 						<% } %>
 					</div>
 				</div>
@@ -45,11 +54,14 @@
 				<div class="album-wrapper col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
 					<img class="album-cover"  src="<%= albumData[1].collab[i].albumCover %>">
 					<div id="albumData" class="album-data">
+						<span class="close-button">X</span>
 						<img id="innerAlbumCover" class="inner-album-cover" src="<%= albumData[1].collab[i].albumCover %>">
-						<p><%= albumData[1].collab[i].artist %></p>
-						<p><%= albumData[1].collab[i].albumTitle %></p>
-						<p><%= albumData[1].collab[i].year %></p>
-						<p><%= albumData[1].collab[i].label %></p>
+						<h2><%= albumData[1].collab[i].artist %></h2>
+						<h3><%= albumData[1].collab[i].albumTitle %></h3>
+						<div class="album-details">
+							<p><%= albumData[1].collab[i].year %></p>
+							<p><%= albumData[1].collab[i].label %></p>
+						</div>
 						<% for(var j=0; j<albumData[1].collab[i].trackList.length; j++) { %>
 							<p><%= albumData[1].collab[i].trackList[j] %></p>
 						<% } %>
@@ -69,10 +81,12 @@
 			<h3 class="past-header">Past</h3>
 			<div class="performance-past-wrapper">
 				<% for(var i=0; i<performances.length; i++) { %>
-					<p><%= performances[i].year %></p>
-					<p><%= performances[i].date %></p>
-					<p><%= performances[i].venue %></p>
-					<p><%= performances[i].city %></p>
+				<div class="row">
+					<p class="col-xs-3"><%= performances[i].year %></p>
+					<p class="col-xs-3"><%= performances[i].date %></p>
+					<p class="col-xs-3"><%= performances[i].venue %></p>
+					<p class="col-xs-3"><%= performances[i].city %></p>
+				</div>
 				<% } %>
 			</div>
 		</div>

@@ -3,10 +3,8 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop >= 90){
-			$('div.nav').slideDown(500);
 			$('div.nav span.nav-arrow').fadeIn(1500);
 		} else {
-			$('div.nav').slideUp(500);
 			$('div.nav span.nav-arrow').fadeOut(100);
 		}
 	});
@@ -31,7 +29,7 @@ $(document).ready(function() {
 		$(this).next().fadeIn()
 	});
 
-	$('body').click(function(event) {
+	$('body, .close-button').click(function(event) {
 		$('div.album-data').fadeOut();
 	});
 

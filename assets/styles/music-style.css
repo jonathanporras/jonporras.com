@@ -4,24 +4,39 @@ div.nav {
   width: 100%;
   height: 45px;
   background-color: rgb(255, 255, 255);
-  display: none;
 }
 
 div.nav span.nav-arrow {
   background-image: url('../images/arrow.png');
   top: -15px;
-  left: 50%;
+  left: 49.5%;
   position: fixed;
   z-index: 10;
   height: 21px;
   width: 83px;
   background-position: -181px -317px;
   transform: rotate(89deg);
-  margin-left: -55px;
+  margin-left: -40px;
+  cursor: pointer;
+  display: none;
+}
+
+div.nav div.spotify-follow-wrapper {
+  width: 100px;
+  text-align: right;
+  margin: 15px 0 0 77%;
 }
 
 div.page-body {
   padding-top: 35px;
+}
+
+div.page-body iframe.spotify-follow {
+  text-align: right;
+}
+
+h2.solo-header, h2.collab-header, h2.performance-header {
+  cursor: pointer;
 }
 
 
@@ -41,21 +56,64 @@ div.album-wrapper img {
 	width: 100%;
 }
 
+div.album-wrapper img.album-cover {
+  cursor: pointer;
+}
+
 div.album-wrapper img.inner-album-cover {
-	max-width: 360px;
+	max-width: 290px;
 }
 
 div.album-wrapper div.album-data {
 	display: none;
   position: fixed;
   z-index: 10;
-  top: 3%;
+  top: 8%;
   width: 65%;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgba(255, 255, 255, 1);
   left: 50%;
   margin: 0 0 0 -32.5%;
   text-align: center;
   padding: 35px;
+}
+
+div.album-wrapper div.album-data span.close-button {
+  position: absolute;
+  left: 94%;
+  top: 8px;
+  transform: translate(-25%, 0);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+div.album-wrapper div.album-data h2, div.album-wrapper div.album-data h3 {
+  margin: 5px 0;
+}
+
+div.album-wrapper div.album-data h2 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+div.album-wrapper div.album-data h3 {
+  font-size: 18px;
+}
+
+div.album-wrapper div.album-data p {
+  font-family: Times;
+  margin: 0;
+  line-height: 17px;
+}
+
+div.album-wrapper div.album-data div.album-details {
+  margin: 10px 0;
+}
+
+div.album-wrapper div.album-data iframe.spotify-frame {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 15px;
 }
 
 div.music-performance-section {
