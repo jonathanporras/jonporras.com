@@ -60,5 +60,5 @@ module.exports.routes = {
 
 
   'post /subscribe': 'UserController.handleSubscription',
-  'get /music': 'MusicController.albumList'
+  'get /music': 'MusicController.musicData'
 };

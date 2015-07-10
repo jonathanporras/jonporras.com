@@ -1,3 +1,38 @@
+div.nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+
+div.nav span.nav-arrow {
+  background-image: url('../images/arrow.png');
+  top: -15px;
+  left: 50%;
+  position: fixed;
+  z-index: 10;
+  height: 21px;
+  width: 83px;
+  background-position: -181px -317px;
+  transform: rotate(89deg);
+  margin-left: -55px;
+}
+
+div.page-body {
+  padding-top: 35px;
+}
+
+
+div.music-solo-section {
+  display: none;
+}
+
+div.music-collab-section {
+  display: none;
+}
+
 div.album-wrapper {
 	padding-top: 15px;
 }
@@ -12,14 +47,21 @@ div.album-wrapper img.inner-album-cover {
 
 div.album-wrapper div.album-data {
 	display: none;
-  	position: fixed;
-  	z-index: 10;
-  	top: 5%;
-  	width: 65%;
-  	height: 100%;
-  	background-color: rgba(255, 255, 255, .9);
-  	left: 50%;
-  	margin: 0 0 0 -33.5%;
-  	text-align: center;
-  	padding: 35px;
+  position: fixed;
+  z-index: 10;
+  top: 3%;
+  width: 65%;
+  background-color: rgba(255, 255, 255, .9);
+  left: 50%;
+  margin: 0 0 0 -32.5%;
+  text-align: center;
+  padding: 35px;
+}
+
+div.music-performance-section {
+  display: none;
+}
+
+div.music-performance-section div.performance-past-wrapper {
+
 }

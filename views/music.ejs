@@ -1,63 +1,86 @@
-<div class="container">
+<div class="nav">
+	<span class="nav-arrow"></span>
+</div>
+<div class="container page-body">
+	<h2 class="solo-header">Solo Albums</h2>
+	<div class="music-solo-section">
+		<% var counter1 = 0 %>
+		<% for(var i = 0;i < albumData[0].solo.length; i++){ %>
 
-	<h2>Solo Albums</h2>
+			<% if(counter1 === 0) { %>
+			<div class="row">
+			<% } %>
 
-	<% var counter1 = 0 %>
-	<% for(var i = 0;i < data[0].solo.length; i++){ %>
-
-		<% if(counter1 === 0) { %>
-		<div class="row">
-		<% } %>
-
-			<div class="album-wrapper col-xs-12 col-sm-4">
-				<img class="album-cover" src="<%= data[0].solo[i].albumCover %>">
-				<div id="albumData" class="album-data">
-					<img id="innerAlbumCover" class="inner-album-cover" src="<%= data[0].solo[i].albumCover %>">
-					<p><%= data[0].solo[i].artist %></p>
-					<p><%= data[0].solo[i].albumTitle %></p>
-					<p><%= data[0].solo[i].year %></p>
-					<p><%= data[0].solo[i].label %></p>
-					<% for(var j=0; j<data[0].solo[i].trackList.length; j++) { %>
-						<p><%= data[0].solo[i].trackList[j] %></p>
-					<% } %>
+				<div class="album-wrapper col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+					<img class="album-cover" src="<%= albumData[0].solo[i].albumCover %>">
+					<div id="albumData" class="album-data">
+						<img id="innerAlbumCover" class="inner-album-cover" src="<%= albumData[0].solo[i].albumCover %>">
+						<p><%= albumData[0].solo[i].artist %></p>
+						<p><%= albumData[0].solo[i].albumTitle %></p>
+						<p><%= albumData[0].solo[i].year %></p>
+						<p><%= albumData[0].solo[i].label %></p>
+						<% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
+							<p><%= albumData[0].solo[i].trackList[j] %></p>
+						<% } %>
+					</div>
 				</div>
+
+			<% if(counter1 === 2 || i === albumData[0].solo.length - 1) { %>
+			<% counter1 = 0 %>
 			</div>
+			<% } else { counter1++ } %>
 
-		<% if(counter1 === 2 || i === data[0].solo.length - 1) { %>
-		<% counter1 = 0 %>
-		</div>
-		<% } else { counter1++ } %>
-
-	<% } %>
+		<% } %>
+	</div>		
 	
+	<h2 class="collab-header">Collaborative Albums</h2>
+	<div class="music-collab-section">
+		<% var counter2 = 0 %>
+		<% for(var i = 0;i < albumData[1].collab.length; i++){ %>
+			
+			<% if(counter2 === 0) { %>
+			<div class="row">
+			<% } %>
 
-	<h2>Collaborative Albums</h2>
-
-	<% var counter2 = 0 %>
-	<% for(var i = 0;i < data[1].collab.length; i++){ %>
-		
-		<% if(counter2 === 0) { %>
-		<div class="row">
-		<% } %>
-
-			<div class="album-wrapper col-xs-12 col-sm-4">
-				<img class="album-cover"  src="<%= data[1].collab[i].albumCover %>">
-				<div id="albumData" class="album-data">
-					<img id="innerAlbumCover" class="inner-album-cover" src="<%= data[1].collab[i].albumCover %>">
-					<p><%= data[1].collab[i].artist %></p>
-					<p><%= data[1].collab[i].albumTitle %></p>
-					<p><%= data[1].collab[i].year %></p>
-					<p><%= data[1].collab[i].label %></p>
-					<% for(var j=0; j<data[1].collab[i].trackList.length; j++) { %>
-						<p><%= data[1].collab[i].trackList[j] %></p>
-					<% } %>
+				<div class="album-wrapper col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+					<img class="album-cover"  src="<%= albumData[1].collab[i].albumCover %>">
+					<div id="albumData" class="album-data">
+						<img id="innerAlbumCover" class="inner-album-cover" src="<%= albumData[1].collab[i].albumCover %>">
+						<p><%= albumData[1].collab[i].artist %></p>
+						<p><%= albumData[1].collab[i].albumTitle %></p>
+						<p><%= albumData[1].collab[i].year %></p>
+						<p><%= albumData[1].collab[i].label %></p>
+						<% for(var j=0; j<albumData[1].collab[i].trackList.length; j++) { %>
+							<p><%= albumData[1].collab[i].trackList[j] %></p>
+						<% } %>
+					</div>
 				</div>
+
+			<% if(counter2 === 2 || i === albumData[1].collab.length - 1) { %>
+			<% counter2 = 0 %>
 			</div>
+			<% } else { counter2++ } %>
 
-		<% if(counter2 === 2 || i === data[1].collab.length - 1) { %>
-		<% counter2 = 0 %>
+		<% } %>
+	</div>
+	<h2 class="performance-header">Performances</h2>
+	<div class="music-performance-section col-xs-12">
+		
+			<h3 class="past-header">Past</h3>
+			<div class="performance-past-wrapper">
+				<h4>2013</h4>
+				<% for(var i=0; i<performances[0].twentyThirteen.length; i++) { %>
+					<p><%= performances[0].twentyThirteen[i].date %></p>
+					<p><%= performances[0].twentyThirteen[i].venue %></p>
+					<p><%= performances[0].twentyThirteen[i].city %></p>
+				<% } %>
+				<h4>2012</h4>
+				<% for(var i=0; i<performances[1].twentyTwelve.length; i++) { %>
+					<p><%= performances[1].twentyTwelve[i].date %></p>
+					<p><%= performances[1].twentyTwelve[i].venue %></p>
+					<p><%= performances[1].twentyTwelve[i].city %></p>
+				<% } %>
+			</div>
 		</div>
-		<% } else { counter2++ } %>
-
-	<% } %>	
+	</div>
 </div>
