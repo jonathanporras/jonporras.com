@@ -2,7 +2,7 @@
 	<span class="nav-arrow"></span>
 </div>
 <div class="container page-body">
-	<h2 class="solo-header">Solo Albums</h2>
+	<h2 class="solo-header">Solo</h2>
 	<div class="music-solo-section">
 		<% var counter1 = 0 %>
 		<% for(var i = 0;i < albumData[0].solo.length; i++){ %>
@@ -33,7 +33,7 @@
 		<% } %>
 	</div>		
 	
-	<h2 class="collab-header">Collaborative Albums</h2>
+	<h2 class="collab-header">Collaborative</h2>
 	<div class="music-collab-section">
 		<% var counter2 = 0 %>
 		<% for(var i = 0;i < albumData[1].collab.length; i++){ %>
@@ -68,17 +68,11 @@
 		
 			<h3 class="past-header">Past</h3>
 			<div class="performance-past-wrapper">
-				<h4>2013</h4>
-				<% for(var i=0; i<performances[0].twentyThirteen.length; i++) { %>
-					<p><%= performances[0].twentyThirteen[i].date %></p>
-					<p><%= performances[0].twentyThirteen[i].venue %></p>
-					<p><%= performances[0].twentyThirteen[i].city %></p>
-				<% } %>
-				<h4>2012</h4>
-				<% for(var i=0; i<performances[1].twentyTwelve.length; i++) { %>
-					<p><%= performances[1].twentyTwelve[i].date %></p>
-					<p><%= performances[1].twentyTwelve[i].venue %></p>
-					<p><%= performances[1].twentyTwelve[i].city %></p>
+				<% for(var i=0; i<performances.length; i++) { %>
+					<p><%= performances[i].year %></p>
+					<p><%= performances[i].date %></p>
+					<p><%= performances[i].venue %></p>
+					<p><%= performances[i].city %></p>
 				<% } %>
 			</div>
 		</div>

@@ -1,0 +1,7 @@
+<h2>Work</h2>
+<% for(var i=0; i<devWork.length; i++) { %>
+<p><%= devWork[i].year %></p>
+<a href="<%= devWork[i].client.link %>" target="_blank"><p><%= devWork[i].client.name %></p></a>
+<a href="<%= devWork[i].link %>" target="_blank"><%= devWork[i].link %></a>
+<a href="<%= devWork[i].designer.link %>" target="_blank"><p><%= devWork[i].designer.name %></p></a>
+<% } %>

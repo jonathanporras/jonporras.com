@@ -20,9 +20,6 @@ div.landing-wrapper ul {
 div.landing-wrapper ul li {
   	font-size: 19px;
   	color: black;
-  	background: url('../images/jp-palms.jpg') top;
-  	-webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
 }
 
 div.landing-wrapper ul a:hover {
