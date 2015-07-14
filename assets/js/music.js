@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	//nav drop down logic
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
@@ -7,6 +8,15 @@ $(document).ready(function() {
 		} else {
 			$('div.nav span.nav-arrow').fadeOut(100);
 		}
+	});
+
+	//nav menu button
+	$('#nav-menu-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+
+	$('#nav-menu-icon').click(function() {
+		$('.menu').toggle('slide')
 	});
 
 	//nav page collapse logic
