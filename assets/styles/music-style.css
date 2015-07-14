@@ -93,14 +93,32 @@ div.nav #nav-menu-icon span {
 
 /* **** End Nav Menu Button **** */
 
+/* **** 1/2 Page Menu **** */
 div.menu {
   display: none;
   padding: 36px 0 0 13px;
-  width: 300px;
+  width: 50%;
+  min-width: 285px;
   height: 100%;
   background-color: #ffffff;
   position: fixed;
+  z-index: 9;
 }
+
+div.menu h2 a {
+  color: #000000;
+}
+
+div.menu a {
+  max-width: 250px;
+  display: inline-block;
+}
+
+div.menu h2 a.current-link {
+  text-decoration: underline;
+}
+
+/* **** 1/2 Page Menu end **** */
 
 div.nav span.nav-arrow {
   background-image: url('../images/arrow.png');
