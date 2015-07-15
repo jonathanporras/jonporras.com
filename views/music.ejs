@@ -1,27 +1,5 @@
-<div class="container-fluid nav">
-	<div class="row">
-		<div class="col-xs-4 menu-wrapper">
-			<div id="nav-menu-icon">
-			  <span></span>
-			  <span></span>
-			  <span></span>
-			</div>
-		</div>
-		<div class="col-xs-4 arrow-up-wrapper">
-			<span class="nav-arrow"></span>
-		</div>
-		<div class="col-xs-4 spotify-follow-wrapper">
-			<iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0FDxPN4OkExGczv8cRTAZx&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-		</div>
-	</div>
-</div>
-<div class="menu">
-	<h2><a href="/">Home</a></h2>
-	<h2><a href="/music">Music</a></h2>
-	<h2><a href="/platform">Platform</a></h2>
-	<h2><a href="/webdevelopment">Web Development</a></h2>
-</div>
 <div class="container page-body">
+	<div class="bg-screen"></div>
 	<h2 class="solo-header">Solo</h2>
 	<div class="music-solo-section">
 		<% var counter1 = 0 %>
@@ -42,9 +20,9 @@
 							<p><%= albumData[0].solo[i].year %></p>
 							<p><%= albumData[0].solo[i].label %></p>
 						</div>
-						<% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
+<!-- 						<% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
 							<p><%= albumData[0].solo[i].trackList[j] %></p>
-						<% } %>
+						<% } %> -->
 						<% if(albumData[0].solo[i].spotifyURI !== "") { %>
 							<iframe class="spotify-frame" src="https://embed.spotify.com/?uri=spotify:album:<%= albumData[0].solo[i].spotifyURI %>" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 						<% } %>

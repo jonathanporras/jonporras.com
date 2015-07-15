@@ -5,4 +5,10 @@ div.user-forms {
 
 h1, h2, h3, h4, h5, h6, li {
 	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+	letter-spacing: 1px;
+}
+
+p {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
 }

@@ -8,11 +8,14 @@ $(document).ready(function() {
 	$('.album-wrapper img.album-cover').click(function(event){
 		event.stopPropagation();
 		$('.album-data').fadeOut();
-		$(this).next().fadeIn()
+		$('div.bg-screen').fadeOut();
+		$(this).next().fadeIn();
+		$('div.bg-screen').fadeIn();
 	});
 
 	$('body, .close-button').click(function(event) {
 		$('div.album-data').fadeOut();
+		$('div.bg-screen').fadeOut();
 	});
 
 	$('div.album-data').click(function(event) {

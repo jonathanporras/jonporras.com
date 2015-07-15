@@ -1,8 +1,8 @@
-<div class="container">
+<div class="container page-body">
 	<div class="row">
 		<div class="col-xs-12 dev-intro">
 			<h2>porrasjon@gmail</h2>
-			<h4>Full Stack Web Developer. Available for collaborations.</h4>
+			<p>I'm a Full Stack Web Developer and Programer based in Brooklyn. Now available for contracted work and collaborations.</p>
 		</div>
 		
 	</div>
@@ -12,10 +12,10 @@
 		</div>
 		<% for(var i=0; i<devWork.length; i++) { %>
 		<div class="row">
-			<p class="col-xs-12 col-sm-3"><%= devWork[i].year %></p>
+			<p class="col-xs-12 col-sm-2"><%= devWork[i].year %></p>
 			<p class="col-xs-12 col-sm-3"><%= devWork[i].client.name %></p>
-			<a href="<%= devWork[i].link %>" target="_blank"><p class="col-xs-12 col-sm-3"><%= devWork[i].link %></p></a>
-			<a href="<%= devWork[i].designer.link %>" target="_blank"><p class="col-xs-12 col-sm-3"><%= devWork[i].designer.name %></p></a>
+			<p class="col-xs-12 col-sm-5"><a href="<%= devWork[i].link %>" target="_blank"><%= devWork[i].link %></a></p>
+			<p class="col-xs-12 col-sm-2">With: <a href="<%= devWork[i].designer.link %>" target="_blank"><%= devWork[i].designer.name %></a></p>
 		</div>
 		<% } %>
 	</div>

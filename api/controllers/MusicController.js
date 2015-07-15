@@ -12,7 +12,7 @@ module.exports = {
 		var data = JSON.parse(fs.readFileSync('data/albumList.json', 'utf8'));
 		var performances = JSON.parse(fs.readFileSync('data/performances.json', 'utf8'));
 
-		res.view('music', {albumData: data, performances: performances});
+		res.view('music', {albumData: data, performances: performances, layout: 'active-layout'});
 	}
 };
 

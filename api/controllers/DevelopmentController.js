@@ -11,7 +11,7 @@ module.exports = {
 	devData: function(req, res) {
 		var devWork = JSON.parse(fs.readFileSync('data/devWork.json', 'utf8'));
 
-		res.view('development', {devWork: devWork});
+		res.view('development', {devWork: devWork, layout: 'active-layout'});
 	}
 };
 
