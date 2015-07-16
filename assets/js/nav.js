@@ -4,9 +4,9 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop >= 90){
-			$('div.nav span.nav-arrow').fadeIn(1500);
+			$('div.nav p.nav-arrow').fadeIn(1500);
 		} else {
-			$('div.nav span.nav-arrow').fadeOut(100);
+			$('div.nav p.nav-arrow').fadeOut(100);
 		}
 	});
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	});
 
 	//nav page collapse logic
-	$('div.nav span.nav-arrow').click(function() {
+	$('div.nav p.nav-arrow').click(function() {
 		checkForExpandedClass('.solo-header');
 		checkForExpandedClass('.collab-header');
 		checkForExpandedClass('.performance-header');
@@ -29,7 +29,6 @@ $(document).ready(function() {
 	//current-link logic
 	$('div.menu a').each(function() {
 		if($(this)[0].pathname && $(this)[0].pathname === window.location.pathname) {
-			console.log()
 			$(this).addClass('current-link');
 		}
 	});

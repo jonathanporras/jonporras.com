@@ -53,10 +53,11 @@
                 </div>
             </div>
             <div class="col-xs-4 arrow-up-wrapper">
-                <span class="nav-arrow"></span>
+                <!-- <span class="nav-arrow"></span> -->
+                <p class="nav-arrow">&#8679;</p>
             </div>
-            <div class="col-xs-4 spotify-follow-wrapper">
-    <!--            <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:0FDxPN4OkExGczv8cRTAZx&size=basic&theme=light&show-count=0" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe> -->
+            <div class="col-xs-4">
+
             </div>
         </div>
     </div>
@@ -65,6 +66,11 @@
         <h2><a href="/music">Music</a></h2>
         <h2><a href="/platform">Platform</a></h2>
         <h2><a href="/webdevelopment">Web Development</a></h2>
+        <div class="social-wrapper">
+            <div class="spotify-button" id="spotify-follow"></div>
+            <a href="https://twitter.com/intent/follow?screen_name=jonrporras" target="_blank"><div class="twitter-button" id="twitter-follow"></div></a>
+            <a href="https://instagram.com/jonporras/" target="_blank"><div class="instagram-button"></div></a>
+        </div>
     </div>
     <%- body %>
     <div class="user-forms">
@@ -182,6 +188,7 @@
     <script src="/js/landing-page-title-flicker.js"></script>
     <script src="/js/music.js"></script>
     <script src="/js/nav.js"></script>
+    <script src="/js/social-media-buttons.js"></script>
     <!--SCRIPTS END-->
 
     <!-- Stripe Logic -->

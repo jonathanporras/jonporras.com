@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	document.onload = (function() {
+		var responseArray = window.location.hash.substr(1).split('&'),
+			hash = {},
+			parent = window.opener;
+
+		responseArray.forEach(function(data) {
+			var newArray = data.split('=');
+				hash[newArray[0]] = newArray[1];
+		});
+
+		parent.postMessage(hash, 'http://localhost:1337');
+		window.close();
+	})();
+</script>
