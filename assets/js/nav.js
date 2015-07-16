@@ -27,13 +27,13 @@ $(document).ready(function() {
 	});
 
 	//current-link logic
-	$('div.menu a').each(function() {
+	$('div.menu a.nav-link').each(function() {
 		if($(this)[0].pathname && $(this)[0].pathname === window.location.pathname) {
 			$(this).addClass('current-link');
 		}
 	});
 
-	$('div.menu a').on({
+	$('div.menu a.nav-link').on({
 		mouseenter: function() {
 			$('div.menu a').each(function() { $(this).removeClass('current-link')});
 			$(this).toggleClass('current-link');

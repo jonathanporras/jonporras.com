@@ -7,7 +7,7 @@
 
 module.exports = {
 	handleSpotifyFollow: function(req, res) {
-		res.view('spotify-return', {data: url});
+		res.view('spotify-proxy');
 	}
 };
 
