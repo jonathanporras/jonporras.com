@@ -44,6 +44,11 @@ div.nav #nav-menu-icon span {
   transition: .25s ease-in-out;
 }
 
+div.nav div.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 #nav-menu-icon span:nth-child(1) {
   top: 5px;
   -webkit-transform-origin: left center;
