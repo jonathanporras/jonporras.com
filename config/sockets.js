@@ -137,8 +137,5 @@ module.exports.sockets = {
   *                                                                          *
   ***************************************************************************/
   // transports: ["polling", "websocket"]
-   'production': {
-    adapter: 'redis-to-go',
-    url: process.env.REDISTOGO_URI
-  }
+   connection: 'productionRedisToGo'
 };
