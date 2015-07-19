@@ -1,3 +1,7 @@
+html, body, div.page-wrapper {
+	height: 100%;
+}
+
 
 div.user-forms {
 	display: none;
@@ -11,4 +15,13 @@ h1, h2, h3, h4, h5, h6, li {
 p {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	letter-spacing: 1px;
+}
+
+div.page-body{
+	min-height: 88%;
+}
+
+div.footer {
+	text-align: center;
+	padding-top: 52px;
 }

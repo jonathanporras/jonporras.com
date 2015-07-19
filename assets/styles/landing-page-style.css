@@ -11,9 +11,9 @@ div.landing-wrapper ul {
 	list-style-type: none;
   	text-align: left;
   	position: absolute;
-  	left: 51%;
+  	left: 49.5%;
   	top: 308px;
-  	transform: translate(-25%, 0);
+    transform: translate(-24.5%, 0);
   	min-width: 220px;
 }
 

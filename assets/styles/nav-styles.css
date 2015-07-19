@@ -242,6 +242,7 @@ div.nav p.nav-arrow {
   z-index: 10;
   cursor: pointer;
   display: none;
+  line-height: 39px;
 }
 
 div.nav div.arrow-up-wrapper {
@@ -262,6 +263,7 @@ div.menu {
   background-color: #ffffff;
   position: fixed;
   z-index: 9;
+  top: 45px;
 }
 
 div.menu h2 a {

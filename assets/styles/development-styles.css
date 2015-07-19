@@ -1,3 +1,11 @@
-div.dev-work-wrapper {
+div.dev-intro h2 a {
+	text-decoration: none;
+	color: #000000;
+}
 
+@media (max-width: 767px) {
+	div.dev-work-wrapper div.dev-work-blurb {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
 }

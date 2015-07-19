@@ -20,6 +20,7 @@ div.page-body iframe.spotify-follow {
 
 h2.solo-header, h2.collab-header, h2.performance-header {
   cursor: pointer;
+  /*text-align: center;*/
 }
 
 

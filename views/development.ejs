@@ -1,8 +1,8 @@
 <div class="container page-body">
 	<div class="row">
 		<div class="col-xs-12 dev-intro">
-			<h2>porrasjon@gmail</h2>
-			<p>I'm a Full Stack Web Developer and Programer based in Brooklyn. Now available for contracted work and collaborations.</p>
+			<h2><a href="mailto:info@jonporras.com">info@jonporras.com</a></h2>
+			<p>I'm a Full Stack Web Developer and Programer based in Brooklyn. Available for contracted work and collaborations.</p>
 		</div>
 		
 	</div>
@@ -11,7 +11,7 @@
 			<h2 class="col-xs-12">Work</h2>
 		</div>
 		<% for(var i=0; i<devWork.length; i++) { %>
-		<div class="row">
+		<div class="row dev-work-blurb">
 			<p class="col-xs-12 col-sm-2"><%= devWork[i].year %></p>
 			<p class="col-xs-12 col-sm-3"><%= devWork[i].client.name %></p>
 			<p class="col-xs-12 col-sm-5"><a href="<%= devWork[i].link %>" target="_blank"><%= devWork[i].link %></a></p>

@@ -72,18 +72,16 @@
 	</div>
 	<h2 class="performance-header">Performances</h2>
 	<div class="music-performance-section col-xs-12">
-		
-			<h3 class="past-header">Past</h3>
-			<div class="performance-past-wrapper">
-				<% for(var i=0; i<performances.length; i++) { %>
-				<div class="row">
-					<p class="col-xs-3"><%= performances[i].year %></p>
-					<p class="col-xs-3"><%= performances[i].date %></p>
-					<p class="col-xs-3"><%= performances[i].venue %></p>
-					<p class="col-xs-3"><%= performances[i].city %></p>
-				</div>
-				<% } %>
+		<h3 class="past-header">Past</h3>
+		<div class="performance-past-wrapper">
+			<% for(var i=0; i<performances.length; i++) { %>
+			<div class="row">
+				<p class="col-xs-3"><%= performances[i].year %></p>
+				<p class="col-xs-3"><%= performances[i].date %></p>
+				<p class="col-xs-3"><%= performances[i].venue %></p>
+				<p class="col-xs-3"><%= performances[i].city %></p>
 			</div>
+			<% } %>
 		</div>
 	</div>
 </div>
