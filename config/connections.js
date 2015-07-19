@@ -91,11 +91,11 @@ module.exports.connections = {
   productionMongoHqDb: {
     adapter: 'sails-mongo',
     url: process.env.MONGOHQ_URL
-  },
-
-  'production': {
-    adapter: 'redis-to-go',
-    url: process.env.REDISTOGO_URI
   }
+
+  // 'production': {
+  //   adapter: 'redis-to-go',
+  //   url: process.env.REDISTOGO_URI
+  // }
 
 };
