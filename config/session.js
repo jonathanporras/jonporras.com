@@ -87,5 +87,9 @@ module.exports.session = {
   // auto_reconnect: false,
   // ssl: false,
   // stringify: true
+   'production': {
+    adapter: 'redis-to-go',
+    url: process.env.REDISTOGO_URI
+  }
 
 };

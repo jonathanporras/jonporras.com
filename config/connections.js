@@ -94,7 +94,7 @@ module.exports.connections = {
   },
 
   'production': {
-    adapter: 'redistogo',
+    adapter: 'redis-to-go',
     url: process.env.REDISTOGO_URI
   }
 
