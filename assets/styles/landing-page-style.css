@@ -11,9 +11,9 @@ div.landing-wrapper ul {
 	list-style-type: none;
   	text-align: left;
   	position: absolute;
-  	left: 49.5%;
+  	left: 50%;
   	top: 308px;
-    transform: translate(-24.5%, 0);
+    transform: translate(-18.5%, 0);
   	min-width: 220px;
 }
 
@@ -28,9 +28,8 @@ div.landing-wrapper ul a:hover {
 
 text {
 	fill: url(#pattern);
-	font-size: 63px;
+	font-size: 55px;
   	text-transform: uppercase;
   	letter-spacing: 1px;
-  	/* text-align: center; */
   	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 }

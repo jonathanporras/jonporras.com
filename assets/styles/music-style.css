@@ -18,7 +18,7 @@ div.page-body iframe.spotify-follow {
   text-align: right;
 }
 
-h2.solo-header, h2.collab-header, h2.performance-header {
+h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
   cursor: pointer;
   /*text-align: center;*/
 }
@@ -54,6 +54,8 @@ div.album-wrapper div.album-data {
   z-index: 10;
   top: 8%;
   width: 65%;
+  max-height: 90%;
+  overflow: scroll;
   background-color: rgba(255, 255, 255, 1);
   left: 50%;
   margin: 0 0 0 -32.5%;
@@ -63,7 +65,7 @@ div.album-wrapper div.album-data {
 
 div.album-wrapper div.album-data span.close-button {
   position: absolute;
-  left: 94%;
+  left: 93%;
   top: 8px;
   transform: translate(-25%, 0);
   font-size: 25px;
@@ -105,4 +107,8 @@ div.music-performance-section {
 
 div.music-performance-section div.performance-past-wrapper {
 
+}
+
+div.music-contact-section {
+  display: none;
 }

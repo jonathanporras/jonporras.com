@@ -24,6 +24,8 @@ $(document).ready(function() {
 		checkForExpandedClass('.solo-header');
 		checkForExpandedClass('.collab-header');
 		checkForExpandedClass('.performance-header');
+		checkForExpandedClass('.contact-header');
+		$("html, body").animate({ scrollTop: "0" }, 500);
 	});
 
 	//current-link logic

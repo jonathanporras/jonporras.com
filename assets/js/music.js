@@ -4,6 +4,7 @@ $(document).ready(function() {
 	handleSlide('.solo-header', '.music-solo-section');
 	handleSlide('.collab-header', '.music-collab-section');
 	handleSlide('.performance-header', '.music-performance-section');
+	handleSlide('.contact-header', '.music-contact-section');
 
 	$('.album-wrapper img.album-cover').click(function(event){
 		event.stopPropagation();
