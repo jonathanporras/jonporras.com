@@ -197,4 +197,16 @@ div.menu div.mailchimp-wrapper div.mc-field-group {
   margin: 20px 0px;
 }
 
+div.menu div.mailchimp-wrapper label, div.menu div.mailchimp-wrapper input {
+  font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+  letter-spacing: 1px;
+}
+
+div.menu div.mailchimp-wrapper input.button {
+  font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+  letter-spacing: 1px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
 /* **** 1/2 Page Side Menu end **** */
