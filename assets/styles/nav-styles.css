@@ -141,6 +141,7 @@ div.menu {
   position: fixed;
   z-index: 9;
   top: 45px;
+  overflow: scroll;
 }
 
 div.menu h2 a {
@@ -204,9 +205,11 @@ div.menu div.mailchimp-wrapper label, div.menu div.mailchimp-wrapper input {
 
 div.menu div.mailchimp-wrapper input.button {
   font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   background-color: #000000;
   color: #ffffff;
+  border: none;
+  width: 145px;
 }
 
 /* **** 1/2 Page Side Menu end **** */

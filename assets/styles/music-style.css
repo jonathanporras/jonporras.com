@@ -65,9 +65,8 @@ div.album-wrapper div.album-data {
 
 div.album-wrapper div.album-data span.close-button {
   position: absolute;
-  left: 93%;
-  top: 8px;
-  transform: translate(-25%, 0);
+  right: 10px;
+  top: 2px;
   font-size: 25px;
   cursor: pointer;
 }
