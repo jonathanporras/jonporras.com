@@ -33,3 +33,9 @@ text {
   	letter-spacing: 1px;
   	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 }
+
+@media (max-width: 767px) {
+  text {
+    font-size: 50px;
+  }
+}
