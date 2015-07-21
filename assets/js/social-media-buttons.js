@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		instagramLink.attr('href', "instagram://media?id=13216061");
-		twitterLink.attr('href', 'twitter:///user?screen_name=jonrporras')
+		twitterLink.attr('href', 'twitter://user?screen_name=jonrporras')
 	} else {
 		instagramLink.attr('href', "https://instagram.com/jonporras/");
 		twitterLink.attr('href', 'https://twitter.com/intent/follow?screen_name=jonrporras');
