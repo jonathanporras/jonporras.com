@@ -133,7 +133,7 @@ div.nav div.arrow-up-wrapper {
 /* **** 1/2 Page Side Menu **** */
 div.menu {
   display: none;
-  padding: 36px 0 0 13px;
+  padding: 15px 0 0 13px;
   width: 50%;
   min-width: 285px;
   height: 100%;
@@ -191,7 +191,7 @@ div.menu div.social-wrapper div.instagram-button {
 
 div.menu div.mailchimp-wrapper {
   clear: both;
-  margin-top: 90px;
+  margin-top: 85px;
 }
 
 div.menu div.mailchimp-wrapper div.mc-field-group {

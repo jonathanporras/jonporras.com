@@ -19,6 +19,7 @@ p {
 
 div.page-body{
 	min-height: 88%;
+  	padding-top: 55px;
 }
 
 div.footer {
