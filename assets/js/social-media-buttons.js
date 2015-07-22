@@ -50,20 +50,20 @@ $(document).ready(function() {
 	// End Spotify Button
 
 	// Social Backlink ////////
-	var instagramLink = $('#instagramLink'),
-		twitterLink = $('#twitterLink');
+	// var instagramLink = $('#instagramLink'),
+	// 	twitterLink = $('#twitterLink');
 
-	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-		instagramLink.attr('href', "instagram://user?username=jonporras");
-		twitterLink.attr('href', 'twitter://user?screen_name=jonrporras')
-	}
+	// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	// 	instagramLink.attr('href', "instagram://user?username=jonporras");
+	// 	twitterLink.attr('href', 'twitter://user?screen_name=jonrporras')
+	// }
 
 });
 
-function instagramLink() {
-	var w = window.open('instagram://user?username=jonporras');
+function handleBacklink(initialLink, secondaryLink) {
+	var w = window.open(initialLink);
 
 	setTimeout(function() {
-		w.location.href = ('https://instagram.com/jonporras/');
+		w.location.href = (secondaryLink);
 	}, 1000);
 }
