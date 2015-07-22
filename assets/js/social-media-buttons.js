@@ -59,3 +59,11 @@ $(document).ready(function() {
 	}
 
 });
+
+function instagramLink() {
+	var w = window.open('instagram://user?username=jonporras');
+
+	setTimeout(function() {
+		w.location.href = ('https://instagram.com/jonporras/');
+	}, 1000);
+}
