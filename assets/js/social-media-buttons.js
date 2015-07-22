@@ -10,7 +10,7 @@ $(document).ready(function() {
             left = (screen.width / 2) - (width / 2),
             top = (screen.height / 2) - (height / 2);
 
-
+            console.log(redirectUri);
         window.addEventListener("message", function(event) {
 
         	if(!!event.data) {
