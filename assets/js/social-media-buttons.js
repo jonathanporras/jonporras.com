@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// Spotify Button Logic
 	function login(callback) {
 		var clientId = '9dd72c40b048494eb1b3734d5e831ca4',
-			redirectUri = window.location.origin + "/spotify/",
+			redirectUri = "http://jonporras.herokuapp.com/spotify/",
 			url = 'https://accounts.spotify.com/authorize?client_id=' + clientId + '&redirect_uri='+ encodeURIComponent(redirectUri) +'&scope=user-follow-modify&response_type=token',
 			width = 450,
             height = 730,
