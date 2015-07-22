@@ -23,6 +23,9 @@ h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
   /*text-align: center;*/
 }
 
+span.plus {
+  display: inline-block;
+}
 
 div.music-solo-section {
   display: none;

@@ -1,6 +1,7 @@
 div.landing-wrapper {
 	padding-top: 145px;
 	position: relative;
+  display: none;
 }
 
 div.landing-wrapper div.title-wrapper {

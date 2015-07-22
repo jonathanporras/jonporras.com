@@ -1,13 +1,5 @@
 $(document).ready(function() {
-	$('div.landing-wrapper ul li')
-		.hover(function() {
-			$('text').animate({opacity: .8}, 100);
-		})
-		.mouseout(function() {
-			$('text').animate({opacity: 1}, 100);
-		});
-
-	$('div.landing-wrapper ul li')
+	$('div.landing-wrapper').fadeIn(1000);
 });
 
 function randomNum() {

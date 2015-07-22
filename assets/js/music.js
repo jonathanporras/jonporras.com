@@ -32,13 +32,32 @@ function handleSlide(clickEl, slidingEl) {
 		if(!clicked) {
 			$(slidingEl).slideDown(1000);
 			$(clickEl).addClass('expanded');
+			
+			var span = $(clickEl).children(':first');
+
+			$({alpha:0}).animate({alpha:45}, {
+	    		duration: 1000,
+	    		step: function(){
+	        		span.css('transform','rotate('+this.alpha+'deg)');
+	    		}
+			});
+
 			clicked = true;	
 		} else {
 			$(slidingEl).slideUp(1000);
 			$(clickEl).removeClass('expanded');
+
+			var span = $(clickEl).children(':first');
+
+			$({alpha:45}).animate({alpha:0}, {
+	    		duration: 1000,
+	    		step: function(){
+	        		span.css('transform','rotate('+this.alpha+'deg)');
+	    		}
+			});
+
 			clicked = false;
-		}
-		
+		}	
 	});
 }
 
