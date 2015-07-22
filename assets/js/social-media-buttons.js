@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// Spotify Button Logic
 	function login(callback) {
 		var clientId = '9dd72c40b048494eb1b3734d5e831ca4',
-			redirectUri = "http://127.0.0.1:1337/spotify/",
+			redirectUri = window.location.origin + "/spotify/",
 			url = 'https://accounts.spotify.com/authorize?client_id=' + clientId + '&redirect_uri='+ encodeURIComponent(redirectUri) +'&scope=user-follow-modify&response_type=token',
 			width = 450,
             height = 730,
@@ -14,7 +14,7 @@ $(document).ready(function() {
         window.addEventListener("message", function(event) {
 
         	if(!!event.data) {
-        		console.log('token passed to callback:' + event.data.access_token);
+        		console.log('token passed to callback');
         		callback(event.data.access_token);
         	}
         }, false);

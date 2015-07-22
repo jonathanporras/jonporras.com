@@ -24,7 +24,7 @@ module.exports = {
 	},
 
 	handleSubscription: function(req, res) {
-		var stripe = require("stripe")("sk_test_xXhgZSfOqRNrHI6HOvNOsk6k");
+		var stripe = require("stripe")(process.env.STRIPE_KEY_TEST);
 		var stripeToken = req.body.stripeToken;
 		
 		stripe.customers.create({
