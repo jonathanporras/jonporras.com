@@ -54,7 +54,6 @@ div.album-wrapper div.album-data {
   top: 8%;
   width: 65%;
   max-height: 90%;
-  overflow: scroll;
   background-color: rgba(255, 255, 255, 1);
   left: 50%;
   margin: 0 0 0 -32.5%;
@@ -86,11 +85,17 @@ div.album-wrapper div.album-data h3 {
 
 div.album-wrapper div.album-data p {
   margin: 0;
-  line-height: 17px;
+  line-height: 13px;
+  font-size: 12px;
 }
 
 div.album-wrapper div.album-data div.album-details {
-  margin: 10px 0;
+  margin: 0px 0 10px 0;
+}
+
+div.album-wrapper div.album-data div.album-details p {
+  line-height: 14px;
+  font-size: 12px;
 }
 
 div.album-wrapper div.album-data iframe.spotify-frame {

@@ -20,9 +20,9 @@
 							<p><%= albumData[0].solo[i].year %></p>
 							<p><%= albumData[0].solo[i].label %></p>
 						</div>
-						<% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
+						<!-- <% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
 							<p><%= albumData[0].solo[i].trackList[j] %></p>
-						<% } %>
+						<% } %> -->
 						<% if(albumData[0].solo[i].spotifyURI !== "") { %>
 							<iframe class="spotify-frame" src="https://embed.spotify.com/?uri=spotify:album:<%= albumData[0].solo[i].spotifyURI %>" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 						<% } %>
@@ -57,9 +57,9 @@
 							<p><%= albumData[1].collab[i].year %></p>
 							<p><%= albumData[1].collab[i].label %></p>
 						</div>
-						<% for(var j=0; j<albumData[1].collab[i].trackList.length; j++) { %>
+						<!-- <% for(var j=0; j<albumData[1].collab[i].trackList.length; j++) { %>
 							<p><%= albumData[1].collab[i].trackList[j] %></p>
-						<% } %>
+						<% } %> -->
 					</div>
 				</div>
 
