@@ -21,11 +21,11 @@ $(document).ready(function() {
 
 	//nav page collapse logic
 	$('div.nav p.nav-arrow').click(function() {
-		$("html, body").animate({ scrollTop: "0" }, 500);
 		checkForExpandedClass('.solo-header');
 		checkForExpandedClass('.collab-header');
 		checkForExpandedClass('.performance-header');
 		checkForExpandedClass('.contact-header');
+		$("html, body").animate({ scrollTop: "0" }, 500);
 	});
 
 	//current-link logic
