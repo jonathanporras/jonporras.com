@@ -10,6 +10,7 @@ var passport = require('passport');
 module.exports = {
 	findUserByEmail: function(req, res) {
 		var email = req.param('id');
+		
 		User.findOne({email:email}).exec(function(err, user) {
 			if(err) {
 				res.json({error:err});
