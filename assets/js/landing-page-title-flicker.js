@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('div.landing-wrapper').fadeIn(1000);
+	$('div.landing-wrapper, .quote-wrapper').fadeIn(1000);
 });
 
 function randomNum() {

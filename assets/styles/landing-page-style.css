@@ -35,6 +35,16 @@ text {
   	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 }
 
+.quote-wrapper {
+  text-align: center;
+  padding-top: 12px;
+  display: none;
+}
+
+.quote-wrapper p {
+  margin: 0px;
+}
+
 @media (max-width: 767px) {
   text {
     font-size: 50px;
