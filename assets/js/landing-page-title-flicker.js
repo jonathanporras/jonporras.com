@@ -1,5 +1,6 @@
 $(document).ready(function() {
-	$('div.landing-wrapper, .quote-wrapper').fadeIn(1000);
+	$('.page-wrapper').fadeIn(1000);
+  $('.splash-page').css('height', window.innerHeight);
 });
 
 function randomNum() {

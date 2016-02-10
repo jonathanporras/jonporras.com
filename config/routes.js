@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
   
-  '/': {
-    view: 'landing-page'
-  },
+  // '/': {
+  //   view: 'landing-page'
+  // },
 
   /***************************************************************************
   *                                                                          *
@@ -58,9 +58,9 @@ module.exports.routes = {
     view: 'signup'
   },
 
-
+  '/': 'documentController.documentData', locals: {layout: 'active-layout'},
   'post /subscribe': 'UserController.handleSubscription',
   'get /music': 'MusicController.musicData', locals: {layout: 'active-layout'},
   'get /spotify': 'SpotifyController.handleSpotifyFollow',
-  'get /webdevelopment': 'DevelopmentController.devData', locals: {layout: 'active-layout'},
+  'get /webdevelopment': 'DevelopmentController.devData', locals: {layout: 'active-layout'}
 };

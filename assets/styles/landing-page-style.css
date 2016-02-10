@@ -1,7 +1,6 @@
 div.landing-wrapper {
 	padding-top: 145px;
 	position: relative;
-  display: none;
 }
 
 div.landing-wrapper div.title-wrapper {
@@ -38,11 +37,15 @@ text {
 .quote-wrapper {
   text-align: center;
   padding-top: 12px;
-  display: none;
 }
 
 .quote-wrapper p {
   margin: 0px;
+}
+
+/* Documents Style */
+.document-image-wrapper img {
+  width: 100%;
 }
 
 @media (max-width: 767px) {
