@@ -9,14 +9,14 @@
                 <img src="<%= documentData[i].imgSrc %>">
               </a>
             </div>
-            <div class="document-text-wrapper col-xs-12 col-sm-6">
-              <a href="/document/<%= documentData[i].slug %>" class="document-link">
-                <h2 class="document-header"><%= documentData[i].documentHeader %></h2>
-              </a>
+            <div class="document-text-wrapper col-xs-12 col-sm-6">  
+              <h2 class="document-header">
+                <a href="/document/<%= documentData[i].slug %>" class="document-link"><%= documentData[i].documentHeader %></a>
+              </h2>      
               <p class="document-sub-header"><%= documentData[i].date %></p>
-              <a href="documents/<%= documentData[i].category %>" class="document-link">
-                <p class="document-sub-header"><%= documentData[i].category %></p>
-              </a>
+              <p class="document-sub-header">
+                <a href="documents/<%= documentData[i].category %>" class="document-link"><%- capitalize(documentData[i].category) %></a>
+              </p>              
             </div>
           </div>  
         </div>

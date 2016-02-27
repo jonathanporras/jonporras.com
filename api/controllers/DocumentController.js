@@ -6,18 +6,17 @@
  */
 
 var fs = require('fs');
+var capitalize = require('../lib/util/capitalize').capitalize;
 
 module.exports = {
 	documentData: function(req, res) {
     var documentData = JSON.parse(fs.readFileSync('data/documents.json', 'utf8'));
-
-    res.view('landing-page', {documentData: documentData, layout: 'active-layout'});
+    return res.view('landing-page', {documentData: documentData, capitalize: capitalize, layout: 'active-layout'});
   },
 
   documents: function(req, res) {
     var documentData = JSON.parse(fs.readFileSync('data/documents.json', 'utf8'));
-
-    res.view('documents-index', {documentData: documentData, layout: 'active-layout'});
+    return res.view('documents-index', {documentData: documentData, capitalize: capitalize, layout: 'active-layout'});
   },
 
   documentsFiltered: function(req, res) {
@@ -37,7 +36,7 @@ module.exports = {
       });
     }
 
-    res.view('documents-index', {documentData: filteredDocuments, layout: 'active-layout'});
+    return res.view('documents-index', {documentData: filteredDocuments, capitalize: capitalize, layout: 'active-layout'});
   }
 };
 

@@ -199,17 +199,20 @@ div.menu div.mailchimp-wrapper div.mc-field-group {
 }
 
 div.menu div.mailchimp-wrapper label, div.menu div.mailchimp-wrapper input {
-  font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
   letter-spacing: 1px;
+  font-size: 18px;
+  padding: 5px;
 }
 
 div.menu div.mailchimp-wrapper input.button {
-  font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
   letter-spacing: 2px;
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  width: 145px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  width: 165px;
+  height: 40px;
 }
 
 /* **** 1/2 Page Side Menu end **** */
