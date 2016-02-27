@@ -1,21 +1,3 @@
 <div class="container">
-  <div class="row">
-      <div class="documents-section-wrapper">
-        <div class="col-xs-12">
-          <% for(var i=0; i<documentData.length; i++) { %>
-            <div class="document-wrapper">
-              <div class="row">
-                <div class="document-image-wrapper col-xs-12 col-sm-6">
-                  <img src="<%= documentData[i].imgSrc %>">
-                </div>
-                <div class="document-text-wrapper col-xs-12 col-sm-6">
-                  <h2 class="document-header"><%= documentData[i].documentHeader %></h2>
-                  <div class="document-body"><%= documentData[i].documentBody %></div>
-                </div>
-              </div>  
-            </div>
-          <% } %>
-        </div>
-      </div>  
-    </div>
-  </div>
+  <%- partial ('documents.ejs') %>
+</div>

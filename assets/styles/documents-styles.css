@@ -1,0 +1,23 @@
+.document-wrapper {
+  padding: 25px;
+}
+
+.document-text-wrapper {
+  padding-top: 55px;
+}
+
+.document-header {
+  margin: 0 0 15px 0;
+}
+
+.document-sub-header {
+  margin: 0;
+}
+
+a.document-link {
+  color: black;
+}
+
+.document-link:hover {
+  color: black;
+}
