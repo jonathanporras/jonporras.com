@@ -15,10 +15,33 @@
   line-height: 17px;
 }
 
-a.document-link {
+a {
   color: black;
 }
 
-.document-link:hover {
+a:hover {
   color: black;
+}
+
+/* document show page */
+
+.document-show-header-img {
+  width: 100%;
+}
+
+.document-title {
+  margin-bottom: 10px;
+}
+
+.document-category, .document-date {
+  margin: 0;
+  line-height: 17px;
+}
+
+.document-body {
+  margin-top: 22px;
+}
+
+.document-nav-wrapper {
+  margin: 50px 0 30px 0;
 }

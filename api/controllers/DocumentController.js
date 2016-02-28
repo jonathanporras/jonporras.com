@@ -23,20 +23,21 @@ module.exports = {
     var documentData = JSON.parse(fs.readFileSync('data/documents.json', 'utf8')),
         filteredDocuments = [],
         slug = req.params.slug,
-        singleDocument,
-        category = req.params.category;
+        category = req.params.category,
+        resView;
 
     if (category) {
       filteredDocuments = documentData.filter(function (singleDocument) {
         return singleDocument.category === category;
       });
+      resView = 'documents-index';
     } else {
-      filteredDocuments = documentData.filter(function (sinlgeDocument) {
-          return sinlgeDocument.slug === slug;
+      filteredDocuments = documentData.filter(function (singleDocument) {
+          return singleDocument.slug === slug;
       });
+      resView = 'documents-show';
     }
-
-    return res.view('documents-index', {documentData: filteredDocuments, capitalize: capitalize, layout: 'active-layout'});
+    return res.view(resView, {documentData: filteredDocuments, capitalize: capitalize, layout: 'active-layout'});
   }
 };
 

@@ -1,0 +1,16 @@
+<div class="container">
+  <%- partial ('documents-nav.ejs') %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="document-show-wrapper">
+        <img class="document-show-header-img" src="<%= documentData[0].imgSrc %>">
+        <div class="document-show-text">
+          <h1 class="document-title"><%= documentData[0].documentHeader %></h1>
+          <p class="document-date"><%= documentData[0].date %></p>
+          <p class="document-category"><a href="/documents/<%= documentData[0].category %>"><%= capitalize(documentData[0].category) %></a></p>
+          <p class="document-body"><%= documentData[0].documentBody %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

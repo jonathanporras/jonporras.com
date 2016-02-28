@@ -5,17 +5,17 @@
         <div class="document-wrapper">
           <div class="row">
             <div class="document-image-wrapper col-xs-12 col-sm-6">
-              <a href="/document/<%= documentData[i].slug %>" class="document-link">
+              <a href="/<%= documentData[i].slug %>" class="document-link">
                 <img src="<%= documentData[i].imgSrc %>">
               </a>
             </div>
             <div class="document-text-wrapper col-xs-12 col-sm-6">  
               <h2 class="document-header">
-                <a href="/document/<%= documentData[i].slug %>" class="document-link"><%= documentData[i].documentHeader %></a>
+                <a href="/<%= documentData[i].slug %>" class="document-link"><%= documentData[i].documentHeader %></a>
               </h2>      
               <p class="document-sub-header"><%= documentData[i].date %></p>
               <p class="document-sub-header">
-                <a href="documents/<%= documentData[i].category %>" class="document-link"><%- capitalize(documentData[i].category) %></a>
+                <a href="/documents/<%= documentData[i].category %>" class="document-link"><%- capitalize(documentData[i].category) %></a>
               </p>              
             </div>
           </div>  

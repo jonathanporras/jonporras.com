@@ -60,5 +60,5 @@ module.exports.routes = {
   'get /webdevelopment': 'DevelopmentController.devData', locals: { layout: 'active-layout' },
   'get /documents': 'documentController.documents', locals: { layout: 'active-layout' },
   'get /documents/:category': 'documentController.documentsFiltered', locals: { layout: 'active-layout' },
-  'get /document/:slug': 'documentController.documentsFiltered', locals: { layout: 'active-layout' }
+  'get /:slug': 'documentController.documentsFiltered', locals: { layout: 'active-layout' }
 };
