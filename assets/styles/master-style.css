@@ -17,6 +17,10 @@ p {
 	letter-spacing: 1px;
 }
 
+div.menu div.social-wrapper {
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+}
+
 div.page-body{
 	min-height: 88%;
   	padding-top: 55px;

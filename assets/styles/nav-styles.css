@@ -152,41 +152,16 @@ div.menu h2 a.current-link {
   text-decoration: underline;
 }
 
-div.menu div.social-wrapper {
-  
-}
-
-div.menu div.social-wrapper div.spotify-button {
-  background-image: url('../images/social-icons.jpg');
-  background-repeat: no-repeat;
-  height: 41px;
-  width: 41px;
-  background-position: -444px -197px;
-  cursor: pointer;
-  float: left;
-  margin: 10px 5px;;
-}
-
-div.menu div.social-wrapper div.twitter-button {
-  background-image: url('../images/social-icons.jpg');
-  background-repeat: no-repeat;
-  height: 41px;
-  width: 41px;
-  background-position: -496px -196px;
+.spotify-button, .twitter-button, .instagram-button {
+  border: solid #000 1px;
+  height: 30px;
+  width: 85px;
   cursor: pointer;
   float: left;
   margin: 10px 5px;
-}
-
-div.menu div.social-wrapper div.instagram-button {
-  background-image: url('../images/instagram-logo.png');
-  background-repeat: no-repeat;
-  height: 41px;
-  width: 41px;
-  
-  cursor: pointer;
-  float: left;
-  margin: 10px 5px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 3px;
 }
 
 div.menu div.mailchimp-wrapper {
