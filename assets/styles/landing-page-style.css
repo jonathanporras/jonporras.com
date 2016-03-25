@@ -34,6 +34,11 @@ text {
   	font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
 }
 
+.title-text {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
 .quote-wrapper {
   text-align: center;
   padding-top: 12px;
@@ -41,6 +46,10 @@ text {
 
 .quote-wrapper p {
   margin: 0px;
+}
+
+.splash-page {
+  background: url('/images/bg01.jpg') bottom;
 }
 
 /* Documents Style */
