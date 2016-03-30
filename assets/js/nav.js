@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+	if (window.location.pathname !== '/') {
+		$('div.nav').show();
+	}
 	//nav drop down logic
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
@@ -8,6 +10,13 @@ $(document).ready(function() {
 		} else {
 			$('div.nav p.nav-arrow').fadeOut(100);
 		}
+
+		if (scrollTop >= 90 && window.location.pathname === '/') {
+			$('div.nav').fadeIn(1500);
+		} else if (window.location.pathname === '/') {
+			$('div.nav').fadeOut(1000);
+		}
+
 	});
 
 	//nav menu button

@@ -49,7 +49,7 @@ text {
 }
 
 .splash-page {
-  background: url('/images/bg01.jpg') bottom;
+  background: url('/images/bg01.jpg') bottom fixed;
 }
 
 /* Documents Style */
