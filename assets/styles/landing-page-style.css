@@ -35,8 +35,14 @@ text {
 }
 
 .title-text {
-  font-size: 40px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 70px;
   font-weight: lighter;
+  color: #BBBBBB;
+  text-align: center;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 
 .quote-wrapper {
