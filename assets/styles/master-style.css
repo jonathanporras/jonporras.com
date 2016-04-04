@@ -8,18 +8,20 @@ div.user-forms {
 }
 
 h1, h2, h3, h4, h5, h6, li {
-	font-family: Futura,"Trebuchet MS",Arial,sans-serif;
-	letter-spacing: 1px;
+	/*font-family: Futura,"Trebuchet MS",Arial,sans-serif;*/
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: 2px;
+	font-weight: lighter;
 }
 
 p {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
-div.menu div.social-wrapper {
+/*div.menu div.social-wrapper {
   font-family: Futura,"Trebuchet MS",Arial,sans-serif;
-}
+}*/
 
 div.page-body{
 	min-height: 88%;

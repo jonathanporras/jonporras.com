@@ -175,14 +175,14 @@ div.menu div.mailchimp-wrapper div.mc-field-group {
 }
 
 div.menu div.mailchimp-wrapper label, div.menu div.mailchimp-wrapper input {
-  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
-  letter-spacing: 1px;
+  /*font-family: Futura,"Trebuchet MS",Arial,sans-serif;*/
+  letter-spacing: 2px;
+  font-weight: 200;
   font-size: 18px;
   padding: 5px;
 }
 
 div.menu div.mailchimp-wrapper input.button {
-  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
   letter-spacing: 2px;
   background-color: #fff;
   color: #000;
