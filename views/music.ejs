@@ -1,41 +1,22 @@
 <div class="container page-body">
 	<div class="bg-screen"></div>
 	<h2 class="solo-header">Solo <span class="plus">+</span></h2>
-	<div class="music-solo-section">
-		<% var counter1 = 0 %>
-		<% for(var i = 0;i < albumData[0].solo.length; i++){ %>
-
-			<% if(counter1 === 0) { %>
-			<div class="row">
-			<% } %>
-
-				<div class="album-wrapper col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
-					<img class="album-cover" src="<%= albumData[0].solo[i].albumCover %>">
-					<div id="albumData" class="album-data">
-						<span class="close-button">X</span>
-						<img id="innerAlbumCover" class="inner-album-cover" src="<%= albumData[0].solo[i].albumCover %>">
-							<h2><%= albumData[0].solo[i].artist %></h2>
-							<h3><%= albumData[0].solo[i].albumTitle %></h3>
-						<div class="album-details">
-							<p><%= albumData[0].solo[i].year %></p>
-							<p><%= albumData[0].solo[i].label %></p>
-						</div>
-						<!-- <% for(var j=0; j<albumData[0].solo[i].trackList.length; j++) { %>
-							<p><%= albumData[0].solo[i].trackList[j] %></p>
-						<% } %> -->
-						<% if(albumData[0].solo[i].spotifyURI !== "") { %>
-							<iframe class="spotify-frame" src="https://embed.spotify.com/?uri=spotify:album:<%= albumData[0].solo[i].spotifyURI %>" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-						<% } %>
-					</div>
-				</div>
-
-			<% if(counter1 === 2 || i === albumData[0].solo.length - 1) { %>
-			<% counter1 = 0 %>
+	<div class="row">
+		<div class="music-solo-section col-xs-12 col-sm-6">
+			<% for (var i=0;i<albumData[0].solo.length;i++) { %>
+			<div class="music-list-wrapper">
+				<h4 class="album-artist"><%= albumData[0].solo[i].artist %></h4>
+				<h4 class="album-title"><%= albumData[0].solo[i].albumTitle %></h4>
 			</div>
-			<% } else { counter1++ } %>
+			<div class="album-splash-data">
+				<img src="<%= albumData[0].solo[i].albumCover %>">
+			</div>
+			<% } %>
+		</div>
+		<div class="music-splash-section col-xs-12 col-sm-6">
 
-		<% } %>
-	</div>		
+		</div>
+	</div>	
 	
 	<h2 class="collab-header">Collaborative <span class="plus">+</span></h2>
 	<div class="music-collab-section">

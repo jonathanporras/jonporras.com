@@ -19,6 +19,25 @@ h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
   /*text-align: center;*/
 }
 
+.album-artist {
+  text-transform: uppercase;
+  display: inline;
+}
+
+.album-title {
+  display: inline;
+  margin-left: 10px;
+}
+
+.music-list-wrapper {
+  margin: 15px;
+}
+
+.album-splash-data {
+  display: none;
+  position: absolute;
+}
+
 span.plus {
   display: inline-block;
 }

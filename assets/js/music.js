@@ -23,6 +23,20 @@ $(document).ready(function() {
 		event.preventDefault();
 		return false;
 	});
+
+
+
+	// music splash
+	$('.music-list-wrapper').hover(function (event) {
+		event.preventDefault();
+		if ($(this).next().attr('class') === 'album-splash-data') {
+			$(this).next().appendTo('.music-splash-section').show();
+		}
+
+		if ($(this).next().attr('display') === 'block') {
+				
+		}
+	});
 	
 });
 
