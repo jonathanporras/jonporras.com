@@ -4,11 +4,11 @@
 	<div class="row">
 		<div class="music-solo-section col-xs-12 col-sm-6">
 			<% for (var i=0;i<albumData[0].solo.length;i++) { %>
-			<div class="music-list-wrapper">
+			<div class="music-list-wrapper" id="<%= i %>">
 				<h4 class="album-artist"><%= albumData[0].solo[i].artist %></h4>
 				<h4 class="album-title"><%= albumData[0].solo[i].albumTitle %></h4>
 			</div>
-			<div class="album-splash-data">
+			<div class="album-splash-data" id="<%= i %>">
 				<img src="<%= albumData[0].solo[i].albumCover %>">
 			</div>
 			<% } %>

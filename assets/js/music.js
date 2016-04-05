@@ -31,10 +31,9 @@ $(document).ready(function() {
 		event.preventDefault();
 		if ($(this).next().attr('class') === 'album-splash-data') {
 			$(this).next().appendTo('.music-splash-section').show();
-		}
-
-		if ($(this).next().attr('display') === 'block') {
-				
+		} else {
+			var id = $(this).attr('id');
+			$('.music-splash-section + #' + id);
 		}
 	});
 	
