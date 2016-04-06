@@ -24,17 +24,14 @@ $(document).ready(function() {
 		return false;
 	});
 
-
+	var zIndexCounter = 10;
 
 	// music splash
 	$('.music-list-wrapper').hover(function (event) {
 		event.preventDefault();
-		if ($(this).next().attr('class') === 'album-splash-data') {
-			$(this).next().appendTo('.music-splash-section').show();
-		} else {
-			var id = $(this).attr('id');
-			$('.music-splash-section + #' + id);
-		}
+		var id = $(this).attr('id').replace('splash', '');
+		$('#splash' + id + '.album-splash-data').show().css('z-index', zIndexCounter);
+		zIndexCounter++;
 	});
 	
 });
@@ -55,6 +52,8 @@ function handleSlide(clickEl, slidingEl) {
 	    		}
 			});
 
+			$('.music-splash-section').fadeIn(1000);
+
 			clicked = true;	
 		} else {
 			$(slidingEl).slideUp(1000);
@@ -68,6 +67,8 @@ function handleSlide(clickEl, slidingEl) {
 	        		span.css('transform','rotate('+this.alpha+'deg)');
 	    		}
 			});
+
+			$('.music-splash-section').fadeOut(1000);
 
 			clicked = false;
 		}	
