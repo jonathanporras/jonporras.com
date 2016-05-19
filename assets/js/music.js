@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	//music section slide down logic
-	handleSlide('.solo-header', '.music-solo-section');
+	handleSlide('.solo-header', '.music-solo-section', '.music-splash-section');
 	handleSlide('.collab-header', '.music-collab-section');
 	handleSlide('.performance-header', '.music-performance-section');
 	handleSlide('.contact-header', '.music-contact-section');
@@ -36,7 +36,7 @@ $(document).ready(function() {
 	
 });
 
-function handleSlide(clickEl, slidingEl) {
+function handleSlide(clickEl, slidingEl, splashSection) {
 	var clicked = false;
 	$(clickEl).click(function() {
 		if(!clicked) {
@@ -52,7 +52,7 @@ function handleSlide(clickEl, slidingEl) {
 	    		}
 			});
 
-			$('.music-splash-section').fadeIn(1000);
+			$(splashSection).fadeIn(1000);
 
 			clicked = true;	
 		} else {
@@ -68,7 +68,7 @@ function handleSlide(clickEl, slidingEl) {
 	    		}
 			});
 
-			$('.music-splash-section').fadeOut(1000);
+			$(splashSection).fadeOut(1000).hide();
 
 			clicked = false;
 		}	

@@ -5,8 +5,14 @@
 		<div class="music-solo-section col-xs-12 col-sm-6">
 			<% for (var i=0;i<albumData[0].solo.length;i++) { %>
 			<div class="music-list-wrapper" id="splash<%= i %>">
-				<h4 class="album-artist"><%= albumData[0].solo[i].artist %></h4>
-				<h4 class="album-title"><%= albumData[0].solo[i].albumTitle %></h4>
+				<div class="row">
+					<div class="col-xs-6">
+						<h4 class="album-artist"><%= albumData[0].solo[i].artist %></h4>
+					</div>
+					<div class="col-xs-6">
+						<h4 class="album-title"><%= albumData[0].solo[i].albumTitle %></h4>
+					</div>
+				</div>
 			</div>
 			<% } %>
 		</div>
