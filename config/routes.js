@@ -56,6 +56,7 @@ module.exports.routes = {
   'post /subscribe': 'UserController.handleSubscription',
   
   'get /music': 'MusicController.musicData', locals: { layout: 'active-layout' },
+  'get /performances': 'MusicController.performanceData', locals: { layout: 'active-layout' },
   'get /spotify': 'SpotifyController.handleSpotifyFollow',
   'get /webdevelopment': 'DevelopmentController.devData', locals: { layout: 'active-layout' },
   'get /documents': 'documentController.documents', locals: { layout: 'active-layout' },

@@ -19,6 +19,10 @@ h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
   /*text-align: center;*/
 }
 
+.performance-header {
+  padding-top: 80px;
+}
+
 .album-artist {
   text-transform: uppercase;
   display: inline;
@@ -123,12 +127,16 @@ div.album-wrapper div.album-data iframe.spotify-frame {
   margin-top: 15px;
 }
 
-div.music-performance-section {
+/*div.music-performance-section {
   display: none;
-}
+}*/
 
 div.music-performance-section div.performance-past-wrapper {
 
+}
+
+.past-header {
+  padding-top: 45px;
 }
 
 div.music-contact-section {

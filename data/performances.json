@@ -1,81 +1,91 @@
 [
-	{
-		"date": "September 21st",
-		"venue": "Incubate Festival",
-		"city": "Tilburg, Netherlands",
-		"year": "2013"
-	},
-	{
-		"date": "March 9th",
-		"venue": "The Lab",
-		"city": "San Francisco",
-		"year": "2013"
-	},
-	{
-		"date": "December 14th",
-		"venue": "The Lab",
-		"city": "San Francisco",
-		"year": "2012"
+	{ "past": 
+		[{
+			"date": "September 21st",
+			"venue": "Incubate Festival",
+			"city": "Tilburg, Netherlands",
+			"year": "2013"
+		},
+		{
+			"date": "March 9th",
+			"venue": "The Lab",
+			"city": "San Francisco",
+			"year": "2013"
+		},
+		{
+			"date": "December 14th",
+			"venue": "The Lab",
+			"city": "San Francisco",
+			"year": "2012"
 
-	},
-	{
-		"date": "November 28th",
-		"venue": "Live on KZSU Stanford 90.1",
-		"city": "Stanford University",
-		"year": "2012"
-	},
-	{
-		"date": "August 3rd",
-		"venue": "Intersection for the Arts / Soundwave ((5)) Festival",
-		"city": "San Francisco",
-		"year": "2012"
-	},
-	{
-		"date": "May 31st",
-		"venue": "ATA",
-		"city": "San Francisco",
-		"year": "2012"
-	},
-	{
-		"date": "March 22nd",
-		"venue": "Will Brown Gallery / Installation and debut screening of REVISITOR (super 8 film)",
-		"city": "San Francisco",
-		"year": "2012"
-	},
-	{
-		"date": "March 17th",
-		"venue": "Bluxome Gallery",
-		"city": "San Francisco",
-		"year": "2012"
-	},
-	{
-		"date": "March 16th",
-		"venue": "Incline Gallery / Collaboration with Paul Clipson",
-		"city": "San Francisco",
-		"year": "2012"
-	},
-	{
-		"date": "March 2nd",
-		"venue": "Little Axe Records",
-		"city": "Portland, OR",
-		"year": "2012"
-	},
-	{
-		"date": "March 1st",
-		"venue": "1st 4000 Vaissade Rd",
-		"city": "Arcada, CA",
-		"year": "2012"
-	},
-	{
-		"date": "February 22nd",
-		"venue": "Eli's Mile High",
-		"city": "Oakland, CA",
-		"year": "2012"
-	},
-	{
-		"date": "November 7th",
-		"venue": "The Lab / Activating the Medium Festival",
-		"city": "San Francisco",
-		"year": "2008"
+		},
+		{
+			"date": "November 28th",
+			"venue": "Live on KZSU Stanford 90.1",
+			"city": "Stanford University",
+			"year": "2012"
+		},
+		{
+			"date": "August 3rd",
+			"venue": "Intersection for the Arts / Soundwave ((5)) Festival",
+			"city": "San Francisco",
+			"year": "2012"
+		},
+		{
+			"date": "May 31st",
+			"venue": "ATA",
+			"city": "San Francisco",
+			"year": "2012"
+		},
+		{
+			"date": "March 22nd",
+			"venue": "Will Brown Gallery / Installation and debut screening of REVISITOR (super 8 film)",
+			"city": "San Francisco",
+			"year": "2012"
+		},
+		{
+			"date": "March 17th",
+			"venue": "Bluxome Gallery",
+			"city": "San Francisco",
+			"year": "2012"
+		},
+		{
+			"date": "March 16th",
+			"venue": "Incline Gallery / Collaboration with Paul Clipson",
+			"city": "San Francisco",
+			"year": "2012"
+		},
+		{
+			"date": "March 2nd",
+			"venue": "Little Axe Records",
+			"city": "Portland, OR",
+			"year": "2012"
+		},
+		{
+			"date": "March 1st",
+			"venue": "1st 4000 Vaissade Rd",
+			"city": "Arcada, CA",
+			"year": "2012"
+		},
+		{
+			"date": "February 22nd",
+			"venue": "Eli's Mile High",
+			"city": "Oakland, CA",
+			"year": "2012"
+		},
+		{
+			"date": "November 7th",
+			"venue": "The Lab / Activating the Medium Festival",
+			"city": "San Francisco",
+			"year": "2008"
+		}
+	]},
+	{ "upcoming":
+		[{
+		"date": "June 5th",
+		"venue": "Array Space",
+		"city": "Toronto, Canada",
+		"year": "2016"
+		}]
 	}
 ]

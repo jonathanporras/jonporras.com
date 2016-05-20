@@ -3,7 +3,7 @@ $(document).ready(function() {
 	//music section slide down logic
 	handleSlide('.solo-header', '.music-solo-section', '.music-splash-section');
 	handleSlide('.collab-header', '.music-collab-section', '.music-splash-section');
-	handleSlide('.performance-header', '.music-performance-section');
+	//handleSlide('.performance-header', '.music-performance-section');
 	handleSlide('.contact-header', '.music-contact-section');
 
 	$('.album-wrapper img.album-cover').click(function(event){

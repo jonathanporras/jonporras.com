@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <h2 class="performance-header">Performances</h2>
+    <div class="music-performance-section col-xs-12">
+      <h3 class="upcoming-header">Upcoming</h3>
+      <div class="performance-upcoming-wrapper">
+        <% for(var i=0; i<performances[1].upcoming.length; i++) { %>
+        <div class="row">
+          <p class="col-xs-3"><%= performances[1].upcoming[i].year %></p>
+          <p class="col-xs-3"><%= performances[1].upcoming[i].date %></p>
+          <p class="col-xs-3"><%= performances[1].upcoming[i].venue %></p>
+          <p class="col-xs-3"><%= performances[1].upcoming[i].city %></p>
+        </div>
+        <% } %>
+      </div>
+      <h3 class="past-header">Past</h3>
+      <div class="performance-past-wrapper">
+        <% for(var i=0; i<performances[0].past.length; i++) { %>
+        <div class="row">
+          <p class="col-xs-3"><%= performances[0].past[i].year %></p>
+          <p class="col-xs-3"><%= performances[0].past[i].date %></p>
+          <p class="col-xs-3"><%= performances[0].past[i].venue %></p>
+          <p class="col-xs-3"><%= performances[0].past[i].city %></p>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>f
