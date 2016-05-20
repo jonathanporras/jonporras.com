@@ -11,7 +11,7 @@ module.exports = {
 	musicData: function(req, res) {
 		var data = JSON.parse(fs.readFileSync('data/albumList.json', 'utf8'));
 
-		res.view('music', {albumData: data, performances: performances, layout: 'active-layout'});
+		res.view('music', {albumData: data, layout: 'active-layout'});
 	},
 
   performanceData: function(req, res) {
