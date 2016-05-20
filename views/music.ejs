@@ -26,38 +26,29 @@
 	</div>	
 	
 	<h2 class="collab-header">Collaborative <span class="plus">+</span></h2>
-	<div class="music-collab-section">
-		<% var counter2 = 0 %>
-		<% for(var i = 0;i < albumData[1].collab.length; i++){ %>
-			
-			<% if(counter2 === 0) { %>
-			<div class="row">
-			<% } %>
-
-				<div class="album-wrapper col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
-					<img class="album-cover"  src="<%= albumData[1].collab[i].albumCover %>">
-					<div id="albumData" class="album-data">
-						<span class="close-button">X</span>
-						<img id="innerAlbumCover" class="inner-album-cover" src="<%= albumData[1].collab[i].albumCover %>">
-						<h2><%= albumData[1].collab[i].artist %></h2>
-						<h3><%= albumData[1].collab[i].albumTitle %></h3>
-						<div class="album-details">
-							<p><%= albumData[1].collab[i].year %></p>
-							<p><%= albumData[1].collab[i].label %></p>
+	<div class="row">
+		<div class="music-collab-section col-xs-12 col-sm-6">
+			<% for (var i=0;i<albumData[1].collab.length;i++) { %>
+				<div class="music-list-wrapper" id="splash<%= i +10 %>">
+					<div class="row">
+						<div class="col-xs-6">
+							<h4 class="album-artist"><%= albumData[1].collab[i].artist %></h4>
 						</div>
-						<!-- <% for(var j=0; j<albumData[1].collab[i].trackList.length; j++) { %>
-							<p><%= albumData[1].collab[i].trackList[j] %></p>
-						<% } %> -->
+						<div class="col-xs-6">
+							<h4 class="album-title"><%= albumData[1].collab[i].albumTitle %></h4>
+						</div>
 					</div>
 				</div>
-
-			<% if(counter2 === 2 || i === albumData[1].collab.length - 1) { %>
-			<% counter2 = 0 %>
+				<% } %>
 			</div>
-			<% } else { counter2++ } %>
-
-		<% } %>
-	</div>
+			<div class="music-splash-section col-xs-12 col-sm-6">
+				<% for (var i=0;i<albumData[1].collab.length;i++) { %>
+				<div class="album-splash-data" id="splash<%= i + 10 %>">
+					<img src="<%= albumData[1].collab[i].albumCover %>">
+				</div>
+				<% } %>
+		</div>
+	</div>	
 	<h2 class="performance-header">Performances <span class="plus">+</span></h2>
 	<div class="music-performance-section col-xs-12">
 		<h3 class="past-header">Past</h3>
