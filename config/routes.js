@@ -59,7 +59,7 @@ module.exports.routes = {
   'get /performances': 'MusicController.performanceData', locals: { layout: 'active-layout' },
   'get /spotify': 'SpotifyController.handleSpotifyFollow',
   'get /webdevelopment': 'DevelopmentController.devData', locals: { layout: 'active-layout' },
-  'get /documents': 'documentController.documents', locals: { layout: 'active-layout' },
-  'get /documents/:category': 'documentController.documentsFiltered', locals: { layout: 'active-layout' },
+  'get /blog': 'documentController.documents', locals: { layout: 'active-layout' },
+  'get /blog/:category': 'documentController.documentsFiltered', locals: { layout: 'active-layout' },
   'get /:slug': 'documentController.documentsFiltered', locals: { layout: 'active-layout' }
 };
