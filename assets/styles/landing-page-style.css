@@ -43,6 +43,7 @@ text {
   letter-spacing: 14px;
   text-transform: uppercase;
   padding-top: 50px;
+  cursor: pointer;
 }
 
 .quote-wrapper {
