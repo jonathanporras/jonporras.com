@@ -26,11 +26,13 @@ h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
 .album-artist {
   text-transform: uppercase;
   display: inline;
+  cursor: pointer;
 }
 
 .album-title {
   display: inline;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .music-list-wrapper {
