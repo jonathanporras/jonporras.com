@@ -7,16 +7,22 @@
 			"label": "Thrill Jockey",
 			"trackList": ["Apeiron", "Recollection", "Divide", "New Monument", "Pleiades"],
 			"albumCover": "images/album-covers/light-divide.jpg",
-			"spotifyURI": "6TKk1OWTVHlqK1wQm7gm2V"
+			"spotifyURI": "6TKk1OWTVHlqK1wQm7gm2V",
+			"link": "https://www.thrilljockey.com/products/light-divide",
+			"format": "LP/CD",
+			"releaseYear": "2014"
 		},
 		{
-			"artist": "Dvvllxns (Vallens)",
-			"albumTitle": "Lxtvny (Litany)",
+			"artist": "Vallens",
+			"albumTitle": "Litany",
 			"year": "2012",
 			"label": "Shelter Press",
 			"trackList": ["Litany", "Xochitl", "Entropy", "Espejo"],
 			"albumCover": "images/album-covers/lxtvny.jpg",
-			"spotifyURI": "2Y6jRXWr0a9rYiIljkXiPY"
+			"spotifyURI": "2Y6jRXWr0a9rYiIljkXiPY",
+			"link": "https://shelter-press.org/sp009-vallens-dvvllxns/",
+			"format": "EP",
+			"releaseYear": "2012"
 		},
 		{
 			"artist": "Jon Porras",
@@ -25,7 +31,10 @@
 			"label": "Immune Recordings",
 			"trackList": ["Light of Dawn", "Your Sleeping Ghost", "Vision in the Water", "House of Mirrors", "Holy Hex", "As You Fade Away", "Awake in Moonlight", "Light of Dusk"],
 			"albumCover": "images/album-covers/orilla-oscura.jpg",
-			"spotifyURI": "1jCjcoO6nmEKTuMmHn32N2"
+			"spotifyURI": "1jCjcoO6nmEKTuMmHn32N2",
+			"link": "https://www.thrilljockey.com/products/orilla-oscura",
+			"format": "LP",
+			"releaseYear": "2012"
 		},
 		{
 			"artist": "Jon Porras",
@@ -34,7 +43,10 @@
 			"label": "Thrill Jockey",
 			"trackList": ["Into Midnight", "Blue Crescent Vision", "Candlelight Mirage", "Desert Flight", "Embers At Dusk", "Into the Black Mesa", "Beyond the Veil"],
 			"albumCover": "images/album-covers/black-mesa.jpg",
-			"spotifyURI": "0IoS6JO70G3Gu4RROAnC6r"
+			"spotifyURI": "0IoS6JO70G3Gu4RROAnC6r",
+			"link": "https://www.thrilljockey.com/products/black-mesa",
+			"format": "LP/CD",
+			"releaseYear": "2012"
 		},
 		{
 			"artist": "Jon Porras",
@@ -43,7 +55,10 @@
 			"label": "Root Strata",
 			"trackList": ["Grey Dunes", "Seascape", "Shore", "For ARH", "Calm", "Peering", "Land's End", "Gaze"],
 			"albumCover": "images/album-covers/undercurrent.jpg",
-			"spotifyURI": "2C9hglN2nzg48sadQ1iyy5"
+			"spotifyURI": "2C9hglN2nzg48sadQ1iyy5",
+			"link": "http://rootstrata.com/release/RS83",
+			"format": "LP",
+			"releaseYear": "2011"
 		},
 		{
 			"artist": "Elm",
@@ -52,7 +67,10 @@
 			"label": "Digitalis",
 			"trackList": ["Nemcatacoa", "In the Shadow of Red Rock", "Silver Dust In Moonlight", "Arc of Wisdom", "Sacrament at Dusk", "Breath of Midnight Still", "Covered in Blankets and Moss", "Three Rings Drawn in Sand", "Deep Mirage"],
 			"albumCover": "images/album-covers/nemcatacoa.jpg",
-			"spotifyURI": ""
+			"spotifyURI": "",
+			"link": "https://www.discogs.com/Elm-Nemcatacoa/release/2963269",
+			"format": "LP/CD",
+			"releaseYear": "2009"
 		},
 		{
 			"artist": "Elm",
@@ -61,7 +79,10 @@
 			"label": "Blackest Rainbow",
 			"trackList": ["Rising Smoke Woods", "Fog Water Shroud", "On Golden Wing", "Solemn Night Prayer", "Long Winter's Howl", "Mist Left to Hide the Ashes", "Waves Break Into Beams of Light"],
 			"albumCover": "images/album-covers/woven-into-light.jpg",
-			"spotifyURI": ""
+			"spotifyURI": "",
+			"link": "https://www.discogs.com/Elm-Woven-Into-Light/release/1591481",
+			"format": "CDR",
+			"releaseYear": "2008"
 		},
 		{
 			"artist": "Elm",
@@ -70,7 +91,10 @@
 			"label": "Digitalis",
 			"trackList": ["Dawn Unveils the Golden Thread", "Offerings", "Arboreal Lace", "Blackened Horizon", "Trails Lined with Torquoise & Silk", "Guaquy", "Warm and Still the Ground Keeps Our Frozen Hands", "The Desert Speaks At Sundown", "Lift Our Eyes to the Swelling Tides"],
 			"albumCover": "images/album-covers/bxogonoas2.jpg",
-			"spotifyURI": ""
+			"spotifyURI": "",
+			"link": "https://www.discogs.com/Elm-Bxogonoas/release/1480541",
+			"format": "CDR",
+			"releaseYear": "2008"
 		}]
 	},
 	{"collab": 

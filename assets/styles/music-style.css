@@ -29,14 +29,30 @@ h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
   cursor: pointer;
 }
 
-.album-title {
+.album-title,
+.album-format,
+.album-release-year {
   display: inline;
   margin-left: 10px;
   cursor: pointer;
 }
 
+.music-item:hover {
+  color: #52698e;
+  text-decoration: none;
+}
+
 .music-list-wrapper {
-  margin: 15px;
+  margin: 45px 0 0 15px;
+  border-bottom: 1px solid;
+}
+
+.music-list-wrapper:last-child {
+  margin-bottom: 45px;
+}
+
+.music-list-wrapper:hover {
+  border-color: #52698e
 }
 
 .album-splash-data {

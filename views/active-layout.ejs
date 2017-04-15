@@ -261,6 +261,11 @@
             // Prevent the form from submitting with the default action
             return false;
         });
+
+        // auto click solo section /music page
+        if(window.location.pathname.indexOf('music') > -1){
+            $('.plus').eq(0).click();
+        };
     };
     </script>
   </body>

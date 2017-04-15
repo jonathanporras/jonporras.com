@@ -7,11 +7,15 @@ div.user-forms {
 	display: none;
 }
 
-h1, h2, h3, h4, h5, h6, li {
+h1, h2, h3, li {
 	/*font-family: Futura,"Trebuchet MS",Arial,sans-serif;*/
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	letter-spacing: 2px;
 	font-weight: lighter;
+}
+
+h4, h5, h6 {
+	font-weight: 200;
 }
 
 p {
