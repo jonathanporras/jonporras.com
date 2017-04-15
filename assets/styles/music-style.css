@@ -40,11 +40,11 @@ h2.solo-header, h2.collab-header, h2.performance-header, h2.contact-header {
 .music-item:hover {
   color: #52698e;
   text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 .music-list-wrapper {
-  margin: 45px 0 0 15px;
-  border-bottom: 1px solid;
+  margin: 25px 0 0 15px;
 }
 
 .music-list-wrapper:last-child {
