@@ -45,6 +45,33 @@ text {
   margin: 0px;
 }
 
+.temp-landing-page-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  position: fixed;
+  top: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.temp-landing-page-text {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 25px;
+  z-index: 10;
+  color: blue;
+  letter-spacing: 3px;
+}
+
+.temp-landing-page-text.cta {
+  left: 25px;
+}
+
 @media (max-width: 767px) {
   text {
     font-size: 50px;
@@ -52,5 +79,9 @@ text {
 
   svg {
     width: 305px;
+  }
+
+  .temp-landing-page-text {
+    font-size: 14px;
   }
 }
