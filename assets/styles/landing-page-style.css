@@ -82,6 +82,11 @@ text {
   }
 
   .temp-landing-page-text {
-    font-size: 14px;
+    left: 25px;
+    top: 60px;
+    font-size: 20px;
+  }
+  .temp-landing-page-text.cta {
+    top: 20px;
   }
 }
