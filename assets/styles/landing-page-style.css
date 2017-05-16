@@ -72,6 +72,10 @@ text {
   left: 25px;
 }
 
+.temp-landing-page-text.press {
+  top: 70px;
+}
+
 @media (max-width: 767px) {
   text {
     font-size: 50px;
@@ -88,5 +92,8 @@ text {
   }
   .temp-landing-page-text.cta {
     top: 20px;
+  }
+  .temp-landing-page-text.press {
+    top: 100px;
   }
 }
