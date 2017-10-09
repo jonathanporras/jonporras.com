@@ -36,6 +36,10 @@ module.exports.routes = {
     view: 'tokonoma-promo-landing-page'
   },
 
+  '/tokonoma': {
+    view: 'tokonoma-promo-landing-page'
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
