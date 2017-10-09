@@ -1,0 +1,80 @@
+.tokonoma-page-container h1, h3, h4, p {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+.tokonoma-page-header {
+  text-transform: uppercase;
+}
+
+.tokonoma-page-sub-header {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.tokonoma-page-splash-wrapper {
+  max-width: 600px;
+  position: absolute;
+  top: 265px;
+  left: 75px;
+}
+
+.tokonoma-page-photo-wrapper {
+  width: 42%;
+  position: absolute;
+}
+
+.tokonoma-page-photo-wrapper.one {
+  left: 49%;
+  top: 25%;
+}
+
+.tokonoma-page-photo-wrapper.two {
+  top: 100%;
+  left: 6%;
+  width: 34%;
+}
+
+.tokonoma-page-photo-wrapper.three {
+  top: 110%;
+  left: 46%;
+  width: 52%;
+}
+
+.tokonoma-page-photo {
+  width: 100%;
+}
+
+.tokonoma-page-artist-bio-wrapper {
+  width: 31%;
+  position: absolute;
+  top: 145%;
+  left: 6%;
+}
+
+.tokonoma-page-artist-bio-header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+
+@media (max-width: 767px) {
+  .tokonoma-page-photo-wrapper.one,
+  .tokonoma-page-photo-wrapper.two,
+  .tokonoma-page-photo-wrapper.three {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
