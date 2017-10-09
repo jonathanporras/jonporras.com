@@ -52,7 +52,8 @@
   left: 6%;
 }
 
-.tokonoma-page-artist-bio-header {
+.tokonoma-page-artist-bio-header,
+.tokonoma-page-performances-header {
   font-size: 14px;
   font-weight: bold;
 }
@@ -69,20 +70,38 @@ video::-webkit-media-controls-panel {
     width: calc(100% + 30px); /* Adjust as needed */
 }
 
+.tokonoma-page-performances-wrapper {
+  position: absolute;
+  right: 140px;
+  top: 1365px;
+  text-align: right;
+}
+
+.tokonoma-page-performance-date-wrapper {
+  margin-bottom: 15px;
+}
+
+.tokonoma-page-performance-date-wrapper p {
+  margin: 0;
+}
+
 @media (max-width: 767px) {
   .tokonoma-page-photo-wrapper.one,
   .tokonoma-page-photo-wrapper.two,
   .tokonoma-page-photo-wrapper.three,
   .tokonoma-page-splash-wrapper,
-  .tokonoma-page-artist-bio-wrapper {
+  .tokonoma-page-artist-bio-wrapper,
+  .tokonoma-page-performances-wrapper {
     width: 100%;
     position: relative;
     left: 0;
     top: 0;
   }
   .tokonoma-page-splash-wrapper,
-  .tokonoma-page-artist-bio-wrapper {
+  .tokonoma-page-artist-bio-wrapper,
+  .tokonoma-page-performances-wrapper {
     padding: 0 25px;
     text-align: center;
+    margin: 90px 0;
   }
 }
