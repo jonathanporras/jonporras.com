@@ -39,8 +39,8 @@
 }
 
 .mail-chimp-button {
-  background: #F2D1AA;
-  border: 1px solid #F2D1AA;
+  background: #D5AC87;
+  border: 1px solid #D5AC87;
   text-transform: uppercase;
   margin-top: 10px;
   width: 151px;
@@ -48,7 +48,7 @@
 }
 
 .mail-chimp-button:hover {
-  color: #F2D1AA;
+  color: #D5AC87;
   background: #fff;
 }
 
@@ -78,9 +78,9 @@ input.mail-chimp-input:-ms-input-placeholder {
 }
 
 a.tokonoma-page-social-button {
-  color: #F2D1AA;
+  color: #D5AC87;
   display: inline-block;
-  border: 1px solid #F2D1AA;
+  border: 1px solid #D5AC87;
   width: 73px;
   padding: 4px 0;
   text-align: center;
@@ -88,7 +88,7 @@ a.tokonoma-page-social-button {
 }
 
 .tokonoma-page-social-button:hover {
-  background-color: #F2D1AA;
+  background-color: #D5AC87;
   color: #fff;
   text-decoration: none;
 }
