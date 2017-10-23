@@ -9,6 +9,8 @@
 .tokonoma-page-container {
   position: relative;
   height: 787px;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .tokonoma-page-header {
@@ -71,6 +73,26 @@ input.mail-chimp-input:-ms-input-placeholder {
   color: #D5AC87 !important;
 }
 
+.tokonoma-page-social-wrapper {
+  margin-top: 13px;
+}
+
+a.tokonoma-page-social-button {
+  color: #F2D1AA;
+  display: inline-block;
+  border: 1px solid #F2D1AA;
+  width: 73px;
+  padding: 4px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tokonoma-page-social-button:hover {
+  background-color: #F2D1AA;
+  color: #fff;
+  text-decoration: none;
+}
+
 .tokonoma-page-photo-wrapper {
   width: 42%;
   position: absolute;
@@ -108,6 +130,10 @@ input.mail-chimp-input:-ms-input-placeholder {
 .tokonoma-page-performances-header {
   font-size: 14px;
   font-weight: bold;
+}
+
+.tokonoma-page-performance-lead {
+  font-size: 16px;
 }
 
 video::-internal-media-controls-download-button {
