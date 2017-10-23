@@ -2,6 +2,15 @@
   font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
 
+.tokonoma-page-container a {
+  color: #BB835B;
+}
+
+.tokonoma-page-container {
+  position: relative;
+  height: 787px;
+}
+
 .tokonoma-page-header {
   text-transform: uppercase;
 }
