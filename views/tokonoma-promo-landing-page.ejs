@@ -76,3 +76,19 @@
     </p>
   </div>
 </div>
+<script type="text/javascript">
+  function trackPageView () {
+    window.mixpanel.track('Tokonoma Landing Page View');
+    var media = document.getElementsByTagName("audio")[0];
+    media.addEventListener('playing', function() {
+      window.mixpanel.track('Tokonoma Sound Sample Play');
+    });
+  }
+  if (window.addEventListener) {
+    // W3C standard
+    window.addEventListener('load', trackPageView, false); // NB **not** 'onload'
+  } else if (window.attachEvent) {
+    // Microsoft
+    window.attachEvent('onload', trackPageView);
+  }
+</script>
