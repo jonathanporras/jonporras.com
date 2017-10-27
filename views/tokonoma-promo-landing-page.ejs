@@ -2,9 +2,13 @@
   <div class="tokonoma-page-splash-wrapper">
     <h1 class="tokonoma-page-header">Tokonoma</h1>
     <h3 class="tokonoma-page-sub-header">New work from artist Jon Porras. <br>Coming soon on <a href="http://www.geographic-north.com/" target="_blank">Geographic North</a>.</h3>
+    <p class="tokonoma-page-listen-message">Listen to <b>'Stochastic Return'</b>:</p>
+    <audio src="/audio/stochastic-return.wav" controls controlsList="nodownload">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
     <p class="tokonoma-page-listen-message">Listen to <b>'Generative Counterpoint'</b>:</p>
     <audio src="/audio/generative-counterpoint.wav" controls controlsList="nodownload">
-    Your browser does not support the <code>audio</code> element.
+      Your browser does not support the <code>audio</code> element.
     </audio>
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup" class="tokonoma-page-mailchimp-wrapper">
@@ -80,8 +84,14 @@
   function trackPageView () {
     window.mixpanel.track('Tokonoma Landing Page View');
     var media = document.getElementsByTagName("audio")[0];
+    var mediaTwo = document.getElementsByTagName("audio")[1];
     media.addEventListener('playing', function() {
-      window.mixpanel.track('Tokonoma Sound Sample Play');
+      window.mixpanel.track('Generative Counterpoint Sound Sample Play');
+      mediaTwo.pause();
+    });
+    mediaTwo.addEventListener('playing', function() {
+      window.mixpanel.track('Stochastic Return Sound Sample Play');
+      media.pause();
     });
   }
   if (window.addEventListener) {
