@@ -1,7 +1,10 @@
 <div class="tokonoma-page-container">
   <div class="tokonoma-page-splash-wrapper">
     <h1 class="tokonoma-page-header">Tokonoma</h1>
-    <h3 class="tokonoma-page-sub-header">New work from artist Jon Porras. <br>Coming soon on <a href="http://www.geographic-north.com/" target="_blank">Geographic North</a>.</h3>
+    <h3 class="tokonoma-page-sub-header">New work from artist Jon Porras. <br><a href="http://geographic-north.com/cassette/tokonoma/" target="_blank">Available now</a> on <a href="http://www.geographic-north.com/" target="_blank">Geographic North</a>.</h3>
+    <a data-button-type="Cassette" class="tokonoma-page-buy-button cassette" href="http://geographic-north.com/cassette/tokonoma/" target="_blank">Buy Art Edition Cassette</a>
+    <a data-button-type="iTunes" class="tokonoma-page-buy-button" href="https://itunes.apple.com/us/album/tokonoma/1311165627" target="_blank">iTunes</a>
+    <a data-button-type="Bandcamp" class="tokonoma-page-buy-button bandcamp" href="https://geographicnorth.bandcamp.com/album/tokonoma" target="_blank">Bandcamp</a>
     <p class="tokonoma-page-listen-message">Listen to <b>'Stochastic Return'</b>:</p>
     <audio src="/audio/stochastic-return.wav" controls controlsList="nodownload">
       Your browser does not support the <code>audio</code> element.
@@ -96,6 +99,20 @@
   </p>
 </div>
 <script type="text/javascript">
+  function loadTracking () {
+    trackPageView();
+    trackBuyButtons();
+  }
+
+  function trackBuyButtons () {
+    var buyButtons = document.querySelectorAll('.tokonoma-page-buy-button');
+    buyButtons.forEach(function (buyButton) {
+      buyButton.onclick = function () {
+        window.mixpanel.track('Buy Button Clicked - ' + this.dataset.buttonType)
+      }
+    });
+  }
+
   function trackPageView () {
     window.mixpanel.track('Tokonoma Landing Page View');
     var media = document.getElementsByTagName("audio")[0];
@@ -111,9 +128,9 @@
   }
   if (window.addEventListener) {
     // W3C standard
-    window.addEventListener('load', trackPageView, false); // NB **not** 'onload'
+    window.addEventListener('load', loadTracking, false); // NB **not** 'onload'
   } else if (window.attachEvent) {
     // Microsoft
-    window.attachEvent('onload', trackPageView);
+    window.attachEvent('onload', loadTracking);
   }
 </script>
