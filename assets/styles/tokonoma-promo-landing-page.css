@@ -100,7 +100,7 @@ a.tokonoma-page-social-button {
   display: inline-block;
   border: 1px solid #D5AC87;
   width: 73px;
-  padding: 4px 0;
+  padding: 5px 0;
   text-align: center;
   cursor: pointer;
 }
@@ -186,7 +186,7 @@ video::-webkit-media-controls-panel {
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
-  top: 238%;
+  top: 315%;
 }
 
 @media (max-width: 1200px) {
@@ -196,6 +196,9 @@ video::-webkit-media-controls-panel {
   .tokonoma-page-performances-wrapper {
     top: 162%;
   }
+  .tokonoma-page-footer {
+    top: 360%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -204,6 +207,9 @@ video::-webkit-media-controls-panel {
   }
   .tokonoma-page-performances-wrapper {
     top: 152%;
+  }
+  .tokonoma-page-footer {
+    top: 400%;
   }
 }
 
@@ -219,12 +225,23 @@ video::-webkit-media-controls-panel {
   a.tokonoma-page-buy-button.cassette {
     margin-top: 20px;
   }
+  .mail-chimp-input,
+  .mail-chimp-button {
+    width: 80%;
+    max-width: 250px;
+  }
+  .mail-chimp-button {
+    padding: 7px 0;
+  }
   .tokonoma-page-social-wrapper {
-    width: 56%;
+    width: 80%;
+    max-width: 250px;
     margin: 10px auto 0 auto;
   }
-  .tokonoma-page-social-button {
+  a.tokonoma-page-social-button {
     margin-top: 5px;
+    width: 49%;
+    padding: 7px 0;
   }
   .tokonoma-page-photo-wrapper.one,
   .tokonoma-page-photo-wrapper.two,
