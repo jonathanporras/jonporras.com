@@ -46,9 +46,14 @@ a.tokonoma-page-buy-button {
 .tokonoma-page-splash-wrapper {
   width: 600px;
   position: absolute;
-  top: 205px;
+  top: 155px;
   left: 75px;
   z-index: 10;
+}
+
+.spotify-player {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .tokonoma-page-mailchimp-wrapper {
@@ -219,6 +224,9 @@ video::-webkit-media-controls-panel {
     display: block;
     margin: 10px auto;
     max-width: 250px;
+  }
+  .spotify-player {
+    margin: 0 auto;
   }
   a.tokonoma-page-buy-button.spotify {
     margin-bottom: 55px;
