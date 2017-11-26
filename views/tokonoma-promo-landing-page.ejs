@@ -1,18 +1,19 @@
 <div class="tokonoma-page-container">
   <div class="tokonoma-page-splash-wrapper">
     <h1 class="tokonoma-page-header">Tokonoma</h1>
-    <h3 class="tokonoma-page-sub-header">New work from artist Jon Porras. <br><a href="http://geographic-north.com/cassette/tokonoma/" target="_blank">Available now</a> on <a href="http://www.geographic-north.com/" target="_blank">Geographic North</a>.</h3>
+    <h3 class="tokonoma-page-sub-header">New work from artist <a href="https://open.spotify.com/album/5SXF8JuJEWgeo6P0AN968u" target="_blank">Jon Porras</a>. <br><a href="http://geographic-north.com/cassette/tokonoma/" target="_blank">Available now</a> on <a href="http://www.geographic-north.com/" target="_blank">Geographic North</a>.</h3>
     <a data-button-type="Cassette" class="tokonoma-page-buy-button cassette" href="http://geographic-north.com/cassette/tokonoma/" target="_blank">Buy Art Edition Cassette</a>
     <a data-button-type="iTunes" class="tokonoma-page-buy-button" href="https://itunes.apple.com/us/album/tokonoma/1311165627" target="_blank">iTunes</a>
     <a data-button-type="Bandcamp" class="tokonoma-page-buy-button bandcamp" href="https://geographicnorth.bandcamp.com/album/tokonoma" target="_blank">Bandcamp</a>
-    <p class="tokonoma-page-listen-message">Listen to <b>'Stochastic Return'</b>:</p>
+    <a data-button-type="Spotify" class="tokonoma-page-buy-button spotify" href="https://open.spotify.com/album/5SXF8JuJEWgeo6P0AN968u" target="_blank">Spotify</a>
+<!--     <p class="tokonoma-page-listen-message">Listen to <b>'Stochastic Return'</b>:</p>
     <audio src="/audio/stochastic-return.wav" controls controlsList="nodownload">
       Your browser does not support the <code>audio</code> element.
     </audio>
     <p class="tokonoma-page-listen-message">Listen to <b>'Generative Counterpoint'</b>:</p>
     <audio src="/audio/generative-counterpoint.wav" controls controlsList="nodownload">
       Your browser does not support the <code>audio</code> element.
-    </audio>
+    </audio> -->
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup" class="tokonoma-page-mailchimp-wrapper">
         <form action="//jonporras.us11.list-manage.com/subscribe/post?u=1acc67906d421301f3e32ca0e&amp;id=1eb46217d8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" validate>
@@ -123,6 +124,9 @@
 
   function trackPageView () {
     window.mixpanel.track('Tokonoma Landing Page View');
+  }
+
+  function trackAudioPlayers () {
     var media = document.getElementsByTagName("audio")[0];
     var mediaTwo = document.getElementsByTagName("audio")[1];
     media.addEventListener('playing', function() {

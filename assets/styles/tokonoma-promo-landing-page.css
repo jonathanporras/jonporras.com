@@ -27,7 +27,7 @@ a.tokonoma-page-buy-button {
   background: #D5AC87;
   border: 1px solid #D5AC87;
   text-transform: uppercase;
-  margin: 5px 0 30px 0;
+  margin: 5px 0 0 0;
   color: white;
   padding: 8px 10px;
   font-size: 18px;
@@ -46,13 +46,13 @@ a.tokonoma-page-buy-button {
 .tokonoma-page-splash-wrapper {
   width: 600px;
   position: absolute;
-  top: 165px;
+  top: 205px;
   left: 75px;
   z-index: 10;
 }
 
 .tokonoma-page-mailchimp-wrapper {
-  margin-top: 25px
+  margin-top: 15px
 }
 
 .mail-chimp-button {
@@ -63,6 +63,7 @@ a.tokonoma-page-buy-button {
   width: 151px;
   color: white;
   padding: 5px 0;
+  border-radius: 0;
 }
 
 .mail-chimp-button:hover {
@@ -219,7 +220,7 @@ video::-webkit-media-controls-panel {
     margin: 10px auto;
     max-width: 250px;
   }
-  a.tokonoma-page-buy-button.bandcamp {
+  a.tokonoma-page-buy-button.spotify {
     margin-bottom: 55px;
   }
   a.tokonoma-page-buy-button.cassette {
