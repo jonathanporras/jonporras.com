@@ -33,6 +33,10 @@ a.tokonoma-page-buy-button {
   font-size: 18px;
 }
 
+a.tokonoma-page-buy-button.cassette {
+  text-decoration: line-through;
+}
+
 .tokonoma-page-buy-button:hover {
   color: #D5AC87;
   background: #fff;
