@@ -128,7 +128,7 @@ a.tokonoma-page-social-button {
 
 .tokonoma-page-photo-wrapper.one {
   left: 49%;
-  top: 25%;
+  top: 20%;
 }
 
 .tokonoma-page-photo-wrapper.two {
@@ -202,6 +202,17 @@ video::-webkit-media-controls-panel {
 .tour-poster {
   width: 50%;
   margin-bottom: 15px;
+}
+
+.tokonoma-page-on-tour {
+  text-align: center;
+  font-size: 50px;
+}
+
+.tokonoma-page-on-tour a {
+  color: #E1CFDE;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
