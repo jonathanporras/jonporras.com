@@ -40,6 +40,10 @@ module.exports.routes = {
     view: 'tokonoma-promo-landing-page'
   },
 
+  '/voices-of-the-air': {
+    view: 'voices-of-the-air'
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
