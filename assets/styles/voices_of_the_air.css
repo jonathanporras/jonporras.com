@@ -1,6 +1,7 @@
 .vota-page-wrapper {
 	font-family: Arial, Helvetica, sans-serif;
 	padding: 0 10px;
+	display: none;
 }
 
 .vota-info-wrapper {
@@ -18,4 +19,9 @@ h2.vota-album-title {
 	width: 49%;
     display: inline-block;
     box-shadow: 1px 1px 4px #999;
+}
+
+.shield {
+	text-align: center;
+    margin: 200px 0;
 }
