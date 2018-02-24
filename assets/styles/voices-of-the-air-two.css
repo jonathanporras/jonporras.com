@@ -34,6 +34,7 @@ h2.vota-page-two-header span {
 
 .vota-page-two-album-img.back {
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .vota-page-two-text-wrapper {
@@ -54,7 +55,6 @@ h2.vota-page-two-header span {
 		float: none;
 		display: block;
 	}
-
 	h2.vota-page-two-header {
 		margin-top: 50px;
 	}
