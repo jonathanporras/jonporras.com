@@ -44,6 +44,10 @@ module.exports.routes = {
     view: 'voices-of-the-air'
   },
 
+  '/voices-of-the-air-two': {
+    view: 'voices-of-the-air-two'
+  },
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

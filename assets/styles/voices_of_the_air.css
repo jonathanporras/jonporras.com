@@ -6,19 +6,32 @@
 
 .vota-info-wrapper {
 	width: 100%;
-	max-width: 800px;
-	margin: 120px auto 120px;
+	max-width: 1200px;
+	margin: 85px auto 120px;
+}
+
+.vota-album-text-wrapper {
+	max-width: 555px;
+	width: 100%;
 }
 
 h2.vota-album-title {
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 10px 0px;
+	margin: 45px 0px 4px;
+}
+
+.vota-album-title span {
+	font-size: 12px;
 }
 
 .vota-album-img {
-	width: 49%;
+	width: 47%;
     display: inline-block;
-    box-shadow: 1px 1px 4px #999;
+    border: 1px solid #ddd;
+}
+
+.vota-album-img.back {
+	float: right;
 }
 
 .shield {

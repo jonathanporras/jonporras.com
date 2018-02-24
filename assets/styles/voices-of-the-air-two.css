@@ -1,0 +1,67 @@
+.vota-page-two-wrapper {
+	font-family: Arial, Helvetica, sans-serif;
+	display: none;
+	width: 100%;
+	max-width: 1200px;
+	margin: 85px auto 120px;
+	padding: 0 20px;
+}
+
+.vota-page-two-left-col {
+	width: 47%;
+    float: left;
+}
+
+.vota-page-two-right-col {
+	width: 47%;
+	float: right;
+}
+
+h2.vota-page-two-header {
+	margin-top: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2.vota-page-two-header span {
+	font-size: 12px;
+}
+
+.vota-page-two-album-img {
+    display: block;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.vota-page-two-album-img.back {
+	margin-top: 50px;
+}
+
+.vota-page-two-text-wrapper {
+	margin: 0 0 0 20px;
+}
+
+.vota-page-two-album-text {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 59px;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+	.vota-page-two-left-col,
+	.vota-page-two-right-col {
+		width: 100%;
+		float: none;
+		display: block;
+	}
+
+	h2.vota-page-two-header {
+		margin-top: 50px;
+	}
+	.vota-page-two-album-text {
+		margin-bottom: 20px;
+	}
+	.vota-page-two-text-wrapper {
+		margin: 0 0 50px 0;
+	}
+}
