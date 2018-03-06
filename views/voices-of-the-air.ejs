@@ -29,8 +29,10 @@
 			if (input.value === 'voice123') {
 				pageWrapper.style.display = 'block';
 				shield.style.display = 'none';
+				window.mixpanel.track('VOTA Password Entered');
 			} else {
 				window.alert('Incorrect password.');
+				window.mixpanel.track('VOTA Incorrect Password');
 			}
 		});
 
@@ -39,13 +41,27 @@
 		        if (input.value === 'voice123') {
 					pageWrapper.style.display = 'block';
 					shield.style.display = 'none';
+					window.mixpanel.track('VOTA Password Entered');
 				} else {
 					window.alert('Incorrect password.');
+					window.mixpanel.track('VOTA Incorrect Password');
 				}
 		    }
 		});
 	} else {
 		pageWrapper.style.display = 'block';
 		shield.style.display = 'none';
+	}
+
+	if (window.addEventListener) {
+	// W3C standard
+	window.addEventListener('load', loadTracking, false); // NB **not** 'onload'
+	} else if (window.attachEvent) {
+	// Microsoft
+	window.attachEvent('onload', loadTracking);
+	}
+
+	function loadTracking () {
+		window.mixpanel.track('VOTA Landing Page View');
 	}
 </script>
