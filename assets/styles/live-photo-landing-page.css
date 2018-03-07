@@ -1,0 +1,93 @@
+.live-photo-landing-page-wrapper {
+	width: 100%;
+	max-width: 800px;
+    padding: 100px 10px;
+    margin: 0 auto 400px;
+}
+
+.live-photo-landing-page-img {
+	width: 100%;
+}
+
+.live-photo-caption {
+	text-align: right;
+	display: block;
+	text-transform: uppercase;
+	font-size: 8px;
+	color: #999;
+	cursor: pointer;
+}
+
+.simple-nav-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    text-transform: uppercase;
+}
+
+.simple-nav-item {
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 18px;
+}
+
+.simple-nav-item a {
+	color: #D5AC87;
+	cursor: pointer;
+}
+
+.live-photo-landing-page-social-wrapper {
+	text-align: center;
+    margin: 400px 0;
+}
+
+.live-photo-landing-page-social-wrapper p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #D5AC87;
+}
+
+.live-photo-landing-page-section-wrapper {
+	text-align: left;
+}
+
+.live-photo-landing-page-section-wrapper h3,
+.live-photo-landing-page-section-wrapper h4,
+.live-photo-landing-page-section-wrapper p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #D5AC87;
+}
+
+.live-photo-landing-page-section-header {
+	margin-bottom: 40px;
+}
+
+.live-photo-landing-page-section-sub-header {
+	margin: 40px 0;
+}
+
+.live-photo-landing-page-section-header.press {
+	margin-top: 400px;
+}
+
+.live-photo-landing-page-press-link {
+	display: block;
+	color: #D5AC87;
+	margin: 15px 0;
+	font-size: 16px;
+}
+
+.live-photo-landing-page-press-link:hover {
+	color: #000;
+}
+
+@media (max-width: 768px) {
+	.simple-nav-wrapper {
+		position: relative;
+		top: 0;
+		right: 0;
+		padding-top: 25px;
+	}
+}

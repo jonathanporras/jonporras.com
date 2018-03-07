@@ -33,7 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
   
   '/': {
-    view: 'tokonoma-promo-landing-page'
+    view: 'live-photo-landing-page'
   },
 
   '/tokonoma': {
