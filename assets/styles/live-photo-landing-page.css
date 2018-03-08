@@ -2,7 +2,7 @@
 	width: 100%;
 	max-width: 800px;
     padding: 100px 10px;
-    margin: 0 auto 400px;
+    margin: 0 auto;
 }
 
 .live-photo-landing-page-img {
@@ -23,6 +23,7 @@
     top: 20px;
     right: 28px;
     text-transform: uppercase;
+    z-index: 10;
 }
 
 .simple-nav-item {
@@ -38,9 +39,9 @@
 	cursor: pointer;
 }
 
-.live-photo-landing-page-social-wrapper {
-	text-align: center;
-    margin: 400px 0;
+.live-photo-landing-page-social-wrapper .tokonoma-page-mailchimp-wrapper {
+	max-width: 410px;
+	margin: 0 auto;
 }
 
 .live-photo-landing-page-social-wrapper p {
@@ -49,7 +50,8 @@
 }
 
 .live-photo-landing-page-section-wrapper {
-	text-align: left;
+	text-align: center;
+	margin: 200px 0;
 }
 
 .live-photo-landing-page-section-wrapper h3,
@@ -62,25 +64,40 @@
 
 .live-photo-landing-page-section-header {
 	margin-bottom: 40px;
+	text-transform: uppercase;
 }
 
 .live-photo-landing-page-section-sub-header {
 	margin: 40px 0;
 }
 
-.live-photo-landing-page-section-header.press {
-	margin-top: 400px;
+.live-photo-landing-page-mailchimp-cta-text {
+	max-width: 410px;
+	margin: 0 auto 10px;
+}
+
+.live-photo-landing-page-section-wrapper.press {
+	max-width: 410px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .live-photo-landing-page-press-link {
 	display: block;
 	color: #D5AC87;
-	margin: 15px 0;
+	margin: 30px 0;
 	font-size: 16px;
 }
 
 .live-photo-landing-page-press-link:hover {
 	color: #000;
+}
+
+.live-photo-landing-page-footer {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #D5AC87;
 }
 
 @media (max-width: 768px) {
@@ -89,5 +106,13 @@
 		top: 0;
 		right: 0;
 		padding-top: 25px;
+	}
+
+	.live-photo-landing-page-wrapper {
+		margin-bottom: 100px;
+	}
+
+	.live-photo-landing-page-section-wrapper {
+		margin: 100px 0;
 	}
 }
