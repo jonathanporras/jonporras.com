@@ -54,3 +54,16 @@
 	</div>
 </div>
 <p class="live-photo-landing-page-footer">&#9400; 2018</p>
+<script type="text/javascript">
+	if (window.addEventListener) {
+	// W3C standard
+	window.addEventListener('load', loadTracking, false); // NB **not** 'onload'
+	} else if (window.attachEvent) {
+	// Microsoft
+	window.attachEvent('onload', loadTracking);
+	}
+
+	function loadTracking () {
+		window.mixpanel.track('Live Photo Landing Page View');
+	}
+</script>
