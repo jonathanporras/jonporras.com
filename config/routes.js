@@ -41,11 +41,11 @@ module.exports.routes = {
   },
 
   '/voices-of-the-air': {
-    view: 'voices-of-the-air'
+    view: 'live-photo-landing-page'
   },
 
   '/voices-of-the-air-two': {
-    view: 'voices-of-the-air-two'
+    view: 'live-photo-landing-page'
   },
 
   /***************************************************************************
