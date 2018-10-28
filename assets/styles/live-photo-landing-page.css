@@ -100,6 +100,42 @@
 	color: #D5AC87;
 }
 
+.vota-landing-wrapper {
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+.vota-landing-wrapper h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #D5AC87;
+	margin-bottom: 20px;
+}
+
+.vota-landing-wrapper a {
+	color: #000;
+}
+
+.vota-landing-wrapper img {
+	width: 80%;
+}
+
+a.vota-cta {
+	color: #D5AC87;
+    display: inline-block;
+    border: 1px solid #D5AC87;
+    width: 115px;
+    padding: 6px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vota-cta:hover {
+	background-color: #D5AC87;
+    color: #fff;
+    text-decoration: none;
+}
+
+
 @media (max-width: 768px) {
 	.simple-nav-wrapper {
 		position: relative;
